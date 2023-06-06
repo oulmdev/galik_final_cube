@@ -1,0 +1,15 @@
+C 60,10,10
+F 30,30,30
+
+NO ./assets/lavawall1.xpm
+SO ./assets/lavawall4.xpm
+EA ./assets/lavawall2.xpm
+WE ./assets/lavawall3.xpm
+
+1111111
+1000001
+1000001
+100N001
+1000001
+1000001
+1111111
