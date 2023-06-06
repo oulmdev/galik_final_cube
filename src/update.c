@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:46:17 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/06 23:51:03 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/07 00:54:32 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,11 +82,29 @@ void	draw_mini_map(t_stock *stock)
 	}
 }
 
+void draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color)
+{
+	int x;
+	int y;
 
+	x = 0;
+	while (x < wall)
+	{
+		y = 0;
+		while (y < wall)
+		{
+			if (sqrt((pow(((wall / 2) - x), 2)) + (pow(((wall / 2) - y), 2))) < wall / 2)
+				my_mlx_pixel_put(stock->img, x + x_x, y + y_y, color);
+			y++;
+		}
+		x++;
+	}
+}
 
 void	draw_every_thing(t_stock *stock)
 {
 	draw_mini_map(stock);
+	draw_circle(stock, stock->player->player_pos_x - MINI_MAP_BOX_ZIZE / 4, stock->player->player_pos_y - MINI_MAP_BOX_ZIZE / 4, MINI_MAP_BOX_ZIZE / 2, RED);
 	my_mlx_pixel_put(stock->img, stock->player->player_pos_x, stock->player->player_pos_y, RED);
 }
 
