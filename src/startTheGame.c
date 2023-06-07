@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 21:45:34 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/06 23:45:11 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/07 01:52:16 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,16 +70,17 @@ bool	set_player(t_stock *stock)
 		return (false);
 	player = get_player_charachter(stock);
 	if (player == 'N')
-		stock->player->player_angle = 90;
+		stock->player->player_direction = 270;
 	else if (player == 'S')
-		stock->player->player_angle = 270;
+		stock->player->player_direction = 90;
 	else if (player == 'E')
-		stock->player->player_angle = 0;
+		stock->player->player_direction = 0;
 	else if (player == 'W')
-		stock->player->player_angle = 180;
+		stock->player->player_direction = 180;
 	stock->player->rotate_speed = 1;
 	stock->player->walk_direction = 0;
 	stock->player->turn_direction = 0;
+	stock->player->sideways = 0;
 	stock->player->walk_speed = 3;
 	return (true);
 }

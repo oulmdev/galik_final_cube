@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/06 23:44:58 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/07 02:01:52 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,17 @@
 # define ESC_KEY 53
 # define F_KEY 3
 # define G_KEY 5
+# define W_KEY 13
+# define S_KEY 1
+# define A_KEY 0
+# define D_KEY 2
+
+
+
 # define FOV 60 // field of view
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
-# define MINI_MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
+# define MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
+# define MINI_MAP_BOX_ZIZE 32 // you can change this to what ever you want to controle the size of the mini map.
 # define SPEED 7
 # define TURNSPEED 1
 /*        Will be removed: to make the work easy        */
@@ -92,9 +100,10 @@ typedef struct s_pars{
 typedef struct s_player{
 	double	player_pos_x;
 	double	player_pos_y;
-	double	player_angle;
+	double	player_direction;
 	int		turn_direction;// 0; idle -1: turn left 1: turn right.
 	int		walk_direction;// 0 : is not walking 1: walking right -1: walking left.
+	int 	sideways;// 0: not walking sideways 1: walking right -1: walking left.
 	double	rotate_speed;
 	double	walk_speed;
 

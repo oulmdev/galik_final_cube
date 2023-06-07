@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:46:17 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/07 00:54:32 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/07 02:03:11 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,42 @@
 
 void	rotate_the_player(t_stock *stock)
 {
-	double	new_player_angle;
+	double	new_player_direction;
 	
-	new_player_angle = stock->player->player_angle 
+	new_player_direction = stock->player->player_direction 
 		+ (stock->player->turn_direction * stock->player->rotate_speed);
-	if (new_player_angle <= 0)
-		new_player_angle += 360;
-	if (new_player_angle > 360)
-		new_player_angle -= 360;
-	stock->player->player_angle = new_player_angle;
+	if (new_player_direction <= 0)
+		new_player_direction += 360;
+	if (new_player_direction > 360)
+		new_player_direction -= 360;
+	stock->player->player_direction = new_player_direction;
 }
 
 void	move_the_player(t_stock *stock)
 {
 	double	new_player_x;
 	double	new_player_y;
+	double	new_player_direction;
 	
-	new_player_x = stock->player->player_pos_x + 
-		cos(to_radians(stock->player->player_angle)) * (stock->player->walk_direction * stock->player->walk_speed);
-	new_player_y = stock->player->player_pos_y 
-		+ sin(to_radians(stock->player->player_angle)) * (stock->player->walk_direction * stock->player->walk_speed);
+	if (!stock->player->sideways)
+	{	
+		new_player_x = stock->player->player_pos_x + 
+			cos(to_radians(stock->player->player_direction)) * (stock->player->walk_direction * stock->player->walk_speed);
+		new_player_y = stock->player->player_pos_y 
+			+ sin(to_radians(stock->player->player_direction)) * (stock->player->walk_direction * stock->player->walk_speed);
+	}
+	else if (stock->player->sideways != 0)
+	{
+		new_player_direction = stock->player->player_direction + 90;
+		if (new_player_direction <= 0)
+			new_player_direction += 360;
+		if (new_player_direction > 360)
+			new_player_direction -= 360;
+		new_player_x = stock->player->player_pos_x + 
+			cos(to_radians(new_player_direction)) * (stock->player->sideways * stock->player->walk_speed);
+		new_player_y = stock->player->player_pos_y 
+			+ sin(to_radians(new_player_direction)) * (stock->player->sideways * stock->player->walk_speed);
+	}
 	if (stock->ex_map[(int)new_player_y / MINI_MAP_BOX_ZIZE][(int)new_player_x / MINI_MAP_BOX_ZIZE] != '1' && 
 		stock->ex_map[(int)new_player_y / MINI_MAP_BOX_ZIZE][(int)new_player_x / MINI_MAP_BOX_ZIZE] != '#')
 	{
@@ -100,12 +116,31 @@ void draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color)
 		x++;
 	}
 }
+/*	TODO:
+**	you have to fully understand this function and how it works.
+*/
+void ddaLine(t_stock *stock, int x2, int y2) {
+	int length = fabs(x2 - stock->player->player_pos_x) > fabs(y2 - stock->player->player_pos_y) ? fabs(x2 - stock->player->player_pos_x) : fabs(y2 - stock->player->player_pos_y);
+
+	double dx = (x2 - stock->player->player_pos_x) / (double)length;
+	double dy = (y2 - stock->player->player_pos_y) / (double)length;
+
+	double x = stock->player->player_pos_x;
+	double y = stock->player->player_pos_y;
+
+	for (int i = 0; i <= length; i++) {
+		my_mlx_pixel_put(stock->img, x, y, RED);
+		x = x + dx;
+		y = y + dy;
+	}
+}
 
 void	draw_every_thing(t_stock *stock)
 {
 	draw_mini_map(stock);
 	draw_circle(stock, stock->player->player_pos_x - MINI_MAP_BOX_ZIZE / 4, stock->player->player_pos_y - MINI_MAP_BOX_ZIZE / 4, MINI_MAP_BOX_ZIZE / 2, RED);
-	my_mlx_pixel_put(stock->img, stock->player->player_pos_x, stock->player->player_pos_y, RED);
+	// ray_casting(stock);
+	// ddaLine(stock, stock->player->player_pos_x + cos(to_radians(stock->player->player_direction)) * 100, stock->player->player_pos_y + sin(to_radians(stock->player->player_direction)) * 100);
 }
 
 int	update(t_stock *stock)
@@ -118,9 +153,11 @@ int	update(t_stock *stock)
 		&stock->img->line_length, &stock->img->endian);
 	
 	if (stock->player->turn_direction != 0)
+	{
 		rotate_the_player(stock);
+	}
 
-	if (stock->player->walk_direction != 0)
+	if (stock->player->walk_direction != 0 || stock->player->sideways != 0)
 		move_the_player(stock);
 		
 	draw_every_thing(stock);
