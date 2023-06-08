@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:46:17 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 04:44:39 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 14:02:54 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,13 +208,11 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 	double	ystep;
 	double	next_hori_touch_x;
 	double	next_hori_touch_y;
-	// find the first horizontal y intersection ! point a
+
 	yintercept_hori = floor(stock->player->player_pos_y / (double)MINI_MAP_BOX_ZIZE) * (double)MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_down)
 		yintercept_hori += MINI_MAP_BOX_ZIZE;
-	// find the first horizontal x intersection ! point a
 	xintercept_hori = stock->player->player_pos_x + (yintercept_hori - stock->player->player_pos_y) / tan(to_radians(ray_angle));
-	// calculate the increment xstep and ystep y step always equal to MINI_MAP_BOX_ZIZE because we are moving horizontally ! ystep = MINI_MAP_BOX_ZIZE
 	ystep = MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_up)
 		ystep *= -1;
@@ -227,13 +225,7 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 
 	next_hori_touch_x = xintercept_hori;
 	next_hori_touch_y = yintercept_hori;
-	
-	// if (stock->rays[ray_index]->is_ray_facing_up)
-	// 	next_hori_touch_y--;
-	
-	
-	// increment xstep and ystep until we find a wall
-	while (next_hori_touch_x >= 0 && next_hori_touch_x <= WIDTH && next_hori_touch_y >= 0 && next_hori_touch_y <= HIGTH)
+	while (next_hori_touch_x >= 0 && next_hori_touch_x <= (WIDTH * MINI_MAP_BOX_ZIZE) && next_hori_touch_y >= 0 && next_hori_touch_y <= (HIGTH * MINI_MAP_BOX_ZIZE))
 	{
 		if ((int)((next_hori_touch_y - stock->rays[ray_index]->is_ray_facing_up) / (MINI_MAP_BOX_ZIZE)) >= stock->map_height || (int)(next_hori_touch_x / MINI_MAP_BOX_ZIZE) >= stock->map_width)
 			break;
@@ -242,6 +234,7 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 			stock->rays[ray_index]->was_hit_horizontal = true;
 			stock->rays[ray_index]->horizontal_wall_hit_x = next_hori_touch_x;
 			stock->rays[ray_index]->horizontal_wall_hit_y = next_hori_touch_y;
+			stock->rays[ray_index]->wall_hit_content = stock->ex_map[(int)(next_hori_touch_y / (MINI_MAP_BOX_ZIZE))][(int)(next_hori_touch_x / (MINI_MAP_BOX_ZIZE))];
 			break;
 		}
 		next_hori_touch_x += xstep;
@@ -251,7 +244,6 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 	if (stock->rays[ray_index]->was_hit_horizontal)
 		return (sqrt(pow((next_hori_touch_x - stock->player->player_pos_x), 2) + pow((next_hori_touch_y - stock->player->player_pos_y), 2)));
 	return (INFINITY);
-	// return (sqrt(pow((next_hori_touch_x - stock->player->player_pos_x), 2) + pow((next_hori_touch_y - stock->player->player_pos_y), 2)));
 }
 
 void	fill_ray_data(t_stock *stock, double ray_angle, int ray_index)
@@ -272,8 +264,7 @@ double	 get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 	double	ystep;
 	double	next_verti_touch_x;
 	double	next_verti_touch_y;
-	
-	// find the first vertical x intersection ! point A
+
 	xintercept_verti = floor(stock->player->player_pos_x / (double)MINI_MAP_BOX_ZIZE) * (double)MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_right)
 		xintercept_verti += MINI_MAP_BOX_ZIZE;
@@ -292,12 +283,7 @@ double	 get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 
 	next_verti_touch_x = xintercept_verti;
 	next_verti_touch_y = yintercept_verti;
-	
-	// if (stock->rays[ray_index]->is_ray_facing_left)
-	// 	next_verti_touch_x--;
-	
-	
-	while (next_verti_touch_x >= 0 && next_verti_touch_x <= WIDTH && next_verti_touch_y >= 0 && next_verti_touch_y <= HIGTH)
+	while (next_verti_touch_x >= 0 && next_verti_touch_x <= (WIDTH * MINI_MAP_BOX_ZIZE) && next_verti_touch_y >= 0 && next_verti_touch_y <= (HIGTH * MINI_MAP_BOX_ZIZE))
 	{
 		if ((int)(next_verti_touch_y / MINI_MAP_BOX_ZIZE) >= stock->map_height || (int)((next_verti_touch_x - stock->rays[ray_index]->is_ray_facing_left) / MINI_MAP_BOX_ZIZE) >= stock->map_width)
 			break;
@@ -309,11 +295,8 @@ double	 get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 			stock->rays[ray_index]->wall_hit_content = (stock->ex_map[(int)(next_verti_touch_y / MINI_MAP_BOX_ZIZE)][(int)(next_verti_touch_x / MINI_MAP_BOX_ZIZE)]);
 			break;
 		}
-		else
-		{
-			next_verti_touch_x += xstep;
-			next_verti_touch_y += ystep;
-		}
+		next_verti_touch_x += xstep;
+		next_verti_touch_y += ystep;
 	}
 	if (stock->rays[ray_index]->was_hit_vertical)
 		return (sqrt(pow((next_verti_touch_x - stock->player->player_pos_x), 2) + pow((next_verti_touch_y - stock->player->player_pos_y), 2)));

@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 21:45:34 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 01:22:44 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 16:16:20 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,6 +124,11 @@ bool	set_player(t_stock *stock)
 	return (true);
 }
 
+int	exit_the_game(int key, t_stock *stock)
+{
+	exit(0);
+}
+
 bool	start_the_game(t_stock *stock)
 {
 	if (!set_mlx(stock))
@@ -133,6 +138,7 @@ bool	start_the_game(t_stock *stock)
 	
 	mlx_hook(stock->win_ptr, 2, 0, key_press, stock);
 	mlx_hook(stock->win_ptr, 3, 0, key_release, stock);
+	mlx_hook(stock->win_ptr, 17, 0, exit_the_game, stock);
 	mlx_loop_hook(stock->mlx_ptr, update, stock);
 	mlx_put_image_to_window(stock->mlx_ptr, stock->win_ptr, stock->img->img, 0, 0);
 	mlx_loop(stock->mlx_ptr);

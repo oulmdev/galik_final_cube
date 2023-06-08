@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 04:43:13 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 16:03:58 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@
 
 # define FOV 60 // field of view
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
-# define MINI_MAP_BOX_ZIZE 16 // you can change this to what ever you want to controle the size of the mini map.
-# define SPEED 1
-# define TURNSPEED 1
+# define MINI_MAP_BOX_ZIZE 32 // you can change this to what ever you want to controle the size of the mini map.
+# define SPEED 2
+# define TURNSPEED 2
 # define WIDTH 1080
 # define HIGTH 768
 
