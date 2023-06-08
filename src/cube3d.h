@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/07 02:01:52 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 04:43:13 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,15 @@
 
 # define FOV 60 // field of view
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
-# define MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
-# define MINI_MAP_BOX_ZIZE 32 // you can change this to what ever you want to controle the size of the mini map.
-# define SPEED 7
+# define MINI_MAP_BOX_ZIZE 16 // you can change this to what ever you want to controle the size of the mini map.
+# define SPEED 1
 # define TURNSPEED 1
+# define WIDTH 1080
+# define HIGTH 768
+
+# define WALL_STRIP_WIDTH 1
+# define NUM_RAYS WIDTH / WALL_STRIP_WIDTH
+
 /*        Will be removed: to make the work easy        */
 
 # define RED 0x00FF0000
@@ -56,6 +61,7 @@
 # define YELLOW 0x00FFFF00
 # define CYAN 0x0000FFFF
 # define GREY 0x00A9A9A9
+# define BROWN 0x00A52A2A
 
 /*                         ENd                          */
 
@@ -76,38 +82,54 @@ typedef struct	s_img {
 # define ERROR_MALLOC "Error\nmalloc() failed to allocate some memory\n"
 # define ERROR_CLOSED_MAP "Error\nThe map is not closed by walls.\n"
 
-# define WIDTH 1024
-# define HIGTH 1024
 
 typedef struct s_pars{
-	int		i;
-	int		j;
-	int		box_size;
-	int		no;
-	int		so;
-	int		we;
-	int		ea;
-	int		f;
-	int		c;
-	char	**map;
-	char	*str;
-	int		len;
-	int		x;
-	int		y;
-	int		player;
+	int			i;
+	int			j;
+	int			box_size;
+	int			no;
+	int			so;
+	int			we;
+	int			ea;
+	int			f;
+	int			c;
+	char		**map;
+	char		*str;
+	int			len;
+	int			x;
+	int			y;
+	int			player;
 }	t_pars;
 
 typedef struct s_player{
-	double	player_pos_x;
-	double	player_pos_y;
-	double	player_direction;
-	int		turn_direction;// 0; idle -1: turn left 1: turn right.
-	int		walk_direction;// 0 : is not walking 1: walking right -1: walking left.
-	int 	sideways;// 0: not walking sideways 1: walking right -1: walking left.
-	double	rotate_speed;
-	double	walk_speed;
+	double		player_pos_x;
+	double		player_pos_y;
+	double		player_direction;
+	int			turn_direction;// 0; idle -1: turn left 1: turn right.
+	int			walk_direction;// 0 : is not walking 1: walking right -1: walking left.
+	int 		sideways;// 0: not walking sideways 1: walking right -1: walking left.
+	double		rotate_speed;
+	double		walk_speed;
 
 }	t_player;
+
+typedef struct s_ray{
+	double		ray_angle;
+	double		horizontal_wall_hit_x;
+	double		horizontal_wall_hit_y;
+	double		vertical_wall_hit_x;
+	double		vertical_wall_hit_y;
+	double		distance;
+	int			was_hit_vertical; // 0: not hit 1: hit
+	int			is_ray_facing_up; // 0: not facing up 1: facing up
+	int			is_ray_facing_down; // 0: not facing down 1: facing down
+	int			is_ray_facing_right; // 0: not facing right 1: facing right
+	int			is_ray_facing_left; // 0: not facing left 1: facing left
+	char		wall_hit_content; // this is for the bonus part if we get to it.
+	int			was_hit_horizontal; // 0: not hit 1: hit
+	double		horizontal_wall_hit_distance;
+	double		vertical_wall_hit_distance;
+}	t_ray;
 
 typedef struct s_stock{
 	void		*mlx_ptr;
@@ -118,11 +140,14 @@ typedef struct s_stock{
 	char		*ea;
 	int			window_width;
 	int			window_height;
+	int			map_width;
+	int			map_height;
 	double		fov;
 	double		mini_map_size_box;
 	char		**ex_map;
 	int			c[3];
 	int			f[3];
+	t_ray		**rays;
 	t_player	*player;
 	t_img		*img;
 	double		angle;

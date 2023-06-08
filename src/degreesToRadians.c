@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/03 19:50:25 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/03 19:53:56 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 01:39:33 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 double to_radians(double angle)
 {
-    return (angle * M_PI / 180);
+    return (angle * M_PI / (double)180);
 }
