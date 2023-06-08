@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:46:17 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 14:02:54 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/08 18:53:14 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,6 @@ void	rotate_the_player(t_stock *stock)
 	
 	new_player_direction = stock->player->player_direction 
 		+ (stock->player->turn_direction * stock->player->rotate_speed);
-		
-
-
-		
 	stock->player->player_direction = normalize_angle(new_player_direction);
 }
 
@@ -74,16 +70,33 @@ void	draw_square(t_stock *stock, t_pars draw, int color)
 	int	j;
 	
 	i = 0;
-	while (i < MINI_MAP_BOX_ZIZE)
+	while (i < MINI_MAP_BOX_ZIZE / 2)
 	{
 		j = 0;
-		while (j < MINI_MAP_BOX_ZIZE)
+		while (j < MINI_MAP_BOX_ZIZE / 2)
 		{
-			if ((draw.j * MINI_MAP_BOX_ZIZE) + j >= WIDTH || (draw.i * MINI_MAP_BOX_ZIZE) + i >= HIGTH)
+			if ((draw.j * (MINI_MAP_BOX_ZIZE /  2)) + j >= WIDTH || (draw.i * (MINI_MAP_BOX_ZIZE /  2)) + i >= HIGTH)
 				break ;
-			my_mlx_pixel_put(stock->img, (draw.j * MINI_MAP_BOX_ZIZE) + j, (draw.i * MINI_MAP_BOX_ZIZE) + i, color);
+			my_mlx_pixel_put(stock->img, (draw.j * (MINI_MAP_BOX_ZIZE /  2)) + j, (draw.i * (MINI_MAP_BOX_ZIZE /  2)) + i, color);
 			j++;
 		}
+		i++;
+	}
+}
+
+
+
+void	draw_mini_map_background(t_stock *stock)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (i < (MINI_MAP_BOX_ZIZE * MINI_MAP_SIZE))
+	{
+		j = 0;
+		while (j < (MINI_MAP_BOX_ZIZE * (MINI_MAP_SIZE)))
+			my_mlx_pixel_put(stock->img, i, j++, WHITE);
 		i++;
 	}
 }
@@ -91,21 +104,8 @@ void	draw_square(t_stock *stock, t_pars draw, int color)
 void	draw_mini_map(t_stock *stock)
 {
 	t_pars	draw;
-
-	draw.i = 0;
-	while (stock->ex_map[draw.i])
-	{
-		draw.j = 0;
-		while (stock->ex_map[draw.i][draw.j])
-		{
-			if (stock->ex_map[draw.i][draw.j] == '1')
-				draw_square(stock, draw, GREY);
-			if (stock->ex_map[draw.i][draw.j] == '0')
-				draw_square(stock, draw, WHITE);
-			draw.j++;
-		}
-		draw.i++;
-	}
+	
+	draw_mini_map_background(stock);
 }
 
 void draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color)
@@ -156,12 +156,7 @@ void ddaLine(t_stock *stock, int x2, int y2, int color) {
 		i++;
 		x = x + dx;
 		y = y + dy;
-	} 
-	// for (int i = 0; i <= length; i++) {
-	// 	my_mlx_pixel_put(stock->img, x, y, RED);
-	// 	x = x + dx;
-	// 	y = y + dy;
-	// }
+	}
 }
 
 void ray_intersept(t_stock *stock){
@@ -182,23 +177,6 @@ void ray_intersept(t_stock *stock){
 	}
 	ddaLine(stock, xintercept_hori, yintercept_hori, RED);
 }
-
-// void	ray_casting(t_stock *stock)
-// {
-// 	double	increment;
-// 	double	ray_angle;
-// 	int		i;
-
-// 	ray_angle = stock->player->player_direction - (double)(FOV / 2);
-// 	increment = (double)FOV / ((double)WIDTH / (double)WALL_STRIP_WIDTH);
-// 	i = 0;
-// 	while (i < 1)
-// 	{
-// 		ddaLine(stock, stock->player->player_pos_x + cos(to_radians(ray_angle)) * (double)500, stock->player->player_pos_y + sin(to_radians(ray_angle)) * (double)500);
-// 		ray_angle += increment;
-// 		i++;
-// 	}
-// }
 
 double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 {
@@ -324,14 +302,12 @@ void	ray_casting(t_stock *stock)
 		vertical_distance = (get_vertical_distance(stock, (ray_angle), ray_index));
 		if (horizontal_distance < vertical_distance)
 		{
-			// ddaLine(stock, stock->player->player_pos_x + cos(to_radians((ray_angle))) * horizontal_distance, stock->player->player_pos_y + sin(to_radians((ray_angle))) * horizontal_distance, GREEN);
 			stock->rays[ray_index]->distance = horizontal_distance * cos(to_radians((stock->player->player_direction - ray_angle)));
 			stock->rays[ray_index]->was_hit_horizontal = true;
 			stock->rays[ray_index]->was_hit_vertical = false;
 		}
 		else
 		{
-			// ddaLine(stock, stock->player->player_pos_x + cos(to_radians((ray_angle))) * vertical_distance, stock->player->player_pos_y + sin(to_radians((ray_angle))) * vertical_distance, RED);
 			stock->rays[ray_index]->distance = vertical_distance * cos(to_radians((stock->player->player_direction - ray_angle)));
 			stock->rays[ray_index]->was_hit_horizontal = false;
 			stock->rays[ray_index]->was_hit_vertical = true;
@@ -340,9 +316,9 @@ void	ray_casting(t_stock *stock)
 		ray_index++;
 	}
 	ray_index = 0;
-	double projection_distance;
-	int j;
-	int color;
+	double	projection_distance;
+	int		j;
+	int		color;
 	while (stock->rays[ray_index])
 	{
 		projection_distance = ((MINI_MAP_BOX_ZIZE) / (stock->rays[ray_index]->distance)) * ((double)WIDTH / 2) / tan(to_radians((double)FOV / 2));
@@ -387,15 +363,10 @@ void draw_floor_and_ceiling(t_stock *stock)
 
 void	draw_every_thing(t_stock *stock)
 {
-	// draw_mini_map(stock);
-	// draw_circle(stock, stock->player->player_pos_x - MINI_MAP_BOX_ZIZE / 4, stock->player->player_pos_y - MINI_MAP_BOX_ZIZE / 4, MINI_MAP_BOX_ZIZE / 2, RED);
-	// ddaLine(stock, stock->player->player_pos_x + cos(to_radians(stock->player->player_direction)) * (double)100, stock->player->player_pos_y + sin(to_radians(stock->player->player_direction)) * (double)100);
+	
 	draw_floor_and_ceiling(stock);
 	ray_casting(stock);
-	
-	// ray_intersept(stock);
-	// ray_casting(stock);
-	// ddaLine(stock, stock->player->player_pos_x + cos(to_radians(stock->player->player_direction)) * 100, stock->player->player_pos_y + sin(to_radians(stock->player->player_direction)) * 100);
+	draw_mini_map(stock);
 }
 
 int	update(t_stock *stock)
