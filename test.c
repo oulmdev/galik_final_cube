@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 23:38:09 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/06 00:25:49 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/09 18:16:37 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,41 +18,72 @@
 
 
 
-typedef struct s_ray{
-    int ray;
-} t_ray;
+#include "mlx.h"
+#include <stdlib.h>
 
-typedef struct s_list{
-    t_ray **ray;
-}	t_list;
+#define WIDTH 800
+#define HEIGHT 600
 
+typedef struct	s_data {
+	void	*mlx;
+	void	*win;
+	void	*img;
+	char	*addr;
+	int		bpp;
+	int		line_len;
+	int		endian;
+}				t_data;
 
-int main()
+typedef struct	s_texture {
+	void	*img;
+	char	*addr;
+	int		width;
+	int		height;
+	int		bpp;
+	int		line_len;
+	int		endian;
+}				t_texture;
+
+void	draw_resized_image(t_data *data, t_texture *texture, int x, int y, int new_width, int new_height)
 {
-    t_list lst;
-    
-    
-    
-    
-    lst.ray = (t_ray **)malloc((sizeof(t_ray *) * 3));
-    if (!lst.ray)
-        return (0);
-    
-    lst.ray[0] = (t_ray *)malloc(sizeof(t_ray));
-    if (!lst.ray[0])
-        return (0);
-    lst.ray[1] = (t_ray *)malloc(sizeof(t_ray));
-    if (!lst.ray[1])
-        return (0);
-    lst.ray[2] = NULL;
-    lst.ray[0]->ray = 1;
-    lst.ray[1]->ray = 2;
-    
-    
-    int i = 0;
-    while (lst.ray[i])
-    {
-        printf("%d\n", lst.ray[i]->ray);
-        i++;
-    }
+	float	scale_x = (float)new_width / texture->width;
+	float	scale_y = (float)new_height / texture->height;
+
+	for (int i = 0; i < new_height; i++)
+	{
+		// for (int j = 0; j < new_width; j++)
+		// {
+			int j = x % texture->width;
+			int tex_x = j / scale_x;
+			int tex_y = i / scale_y;
+			int color = *(int *)(texture->addr + (tex_y * texture->line_len + tex_x * (texture->bpp / 8)));
+			*(int *)(data->addr + ((y + i) * data->line_len + (x + j) * (data->bpp / 8))) = color;
+		// }
+	}
+}
+
+int		main(void)
+{
+	t_data		data;
+	t_texture	texture;
+
+	data.mlx = mlx_init();
+	data.win = mlx_new_window(data.mlx, WIDTH, HEIGHT, "Resized Image");
+	data.img = mlx_new_image(data.mlx, WIDTH, HEIGHT);
+	data.addr = mlx_get_data_addr(data.img, &(data.bpp), &(data.line_len), &(data.endian));
+
+	// Load texture image and retrieve pixel data
+	texture.img = mlx_xpm_file_to_image(data.mlx, "wood.xpm", &(texture.width), &(texture.height));
+	texture.addr = mlx_get_data_addr(texture.img, &(texture.bpp), &(texture.line_len), &(texture.endian));
+
+	// Draw resized image
+	int x = 100;
+	int y = 100;
+	int new_width = 400;
+	int new_height = 300;
+	draw_resized_image(&data, &texture, x, y, new_width, new_height);
+
+	mlx_put_image_to_window(data.mlx, data.win, data.img, 0, 0);
+	mlx_loop(data.mlx);
+	return (0);
 }

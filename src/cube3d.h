@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 18:51:58 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/09 19:07:57 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
 # define MINI_MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
 # define MINI_MAP_SIZE 3
-# define SPEED 2
-# define TURNSPEED 2
+# define SPEED 4
+# define TURNSPEED 3
 # define WIDTH 1080
 # define HIGTH 768
 
@@ -87,6 +87,8 @@ typedef struct	s_img {
 typedef struct s_pars{
 	int			i;
 	int			j;
+	int			k;
+	int			l;
 	int			box_size;
 	int			no;
 	int			so;
@@ -114,6 +116,16 @@ typedef struct s_player{
 
 }	t_player;
 
+typedef struct s_texture{
+	void		*img;
+	char		*addr;
+	int			bits_per_pixel;
+	int			line_length;
+	int			endian;
+	int			width;
+	int			height;
+}	t_texture;
+
 typedef struct s_ray{
 	double		ray_angle;
 	double		horizontal_wall_hit_x;
@@ -121,6 +133,7 @@ typedef struct s_ray{
 	double		vertical_wall_hit_x;
 	double		vertical_wall_hit_y;
 	double		distance;
+	double		projection_distance;
 	int			was_hit_vertical; // 0: not hit 1: hit
 	int			is_ray_facing_up; // 0: not facing up 1: facing up
 	int			is_ray_facing_down; // 0: not facing down 1: facing down
@@ -151,6 +164,7 @@ typedef struct s_stock{
 	t_ray		**rays;
 	t_player	*player;
 	t_img		*img;
+	t_texture	**texture;
 	double		angle;
 	int			drawer_x;
 }	t_stock;

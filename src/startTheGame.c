@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 21:45:34 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 16:16:20 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/09 19:15:20 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,13 +129,40 @@ int	exit_the_game(int key, t_stock *stock)
 	exit(0);
 }
 
+bool	set_textures(t_stock *stock)
+{
+	stock->texture = (t_texture **)malloc(sizeof(t_texture *) * 5);
+	if (!stock->texture)
+		return (print("Error\nFailed to allocate memory for texture\n", 2), false);
+	stock->texture[4] = NULL;
+	stock->texture[3] = NULL;
+	stock->texture[2] = NULL;
+	stock->texture[1] = NULL;
+	stock->texture[0] = malloc(sizeof(t_texture));
+	if (!stock->texture[0])
+		return (print("Error\nFailed to allocate memory for texture\n", 2), false);
+	stock->texture[0]->img = mlx_xpm_file_to_image(stock->mlx_ptr, 
+		stock->no, &stock->texture[0]->width, 
+		&stock->texture[0]->height);
+	if (!stock->texture[0]->img)
+		return (print("Error\nFailed to load `NO' texture\n", 2), false);
+	stock->texture[0]->addr = mlx_get_data_addr(stock->texture[0]->img, 
+		&stock->texture[0]->bits_per_pixel, &stock->texture[0]->line_length, 
+		&stock->texture[0]->endian);
+	if (!stock->texture[0]->addr)
+		return (print("Error\nFailed to load `NO' texture\n", 2), false);
+	
+	return (true);
+}
+
 bool	start_the_game(t_stock *stock)
 {
 	if (!set_mlx(stock))
 		return (false);
 	if (!set_player(stock))
 		return (false);
-	
+	if (!set_textures(stock))
+		return (false);
 	mlx_hook(stock->win_ptr, 2, 0, key_press, stock);
 	mlx_hook(stock->win_ptr, 3, 0, key_release, stock);
 	mlx_hook(stock->win_ptr, 17, 0, exit_the_game, stock);

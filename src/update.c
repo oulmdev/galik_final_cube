@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:46:17 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/08 18:53:14 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/09 20:30:17 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,28 +64,6 @@ void	move_the_player(t_stock *stock)
 }
 
 
-void	draw_square(t_stock *stock, t_pars draw, int color)
-{
-	int	i;
-	int	j;
-	
-	i = 0;
-	while (i < MINI_MAP_BOX_ZIZE / 2)
-	{
-		j = 0;
-		while (j < MINI_MAP_BOX_ZIZE / 2)
-		{
-			if ((draw.j * (MINI_MAP_BOX_ZIZE /  2)) + j >= WIDTH || (draw.i * (MINI_MAP_BOX_ZIZE /  2)) + i >= HIGTH)
-				break ;
-			my_mlx_pixel_put(stock->img, (draw.j * (MINI_MAP_BOX_ZIZE /  2)) + j, (draw.i * (MINI_MAP_BOX_ZIZE /  2)) + i, color);
-			j++;
-		}
-		i++;
-	}
-}
-
-
-
 void	draw_mini_map_background(t_stock *stock)
 {
 	int	i;
@@ -101,12 +79,29 @@ void	draw_mini_map_background(t_stock *stock)
 	}
 }
 
-void	draw_mini_map(t_stock *stock)
-{
-	t_pars	draw;
+// int	resize_the_map(t_stock *stock, int	resize, int flag)
+// {
+// 	int	factor;
+
+// 	factor = 0;
+// 	if (flag)
+// 	{
+// 		while ()
+// 		{
+			
+// 		}
+// 	}
+// }
+
+// void	draw_mini_map(t_stock *stock)
+// {
+// 	t_pars	draw;
 	
-	draw_mini_map_background(stock);
-}
+// 	draw_mini_map_background(stock);
+// 	draw.x = ((int)stock->player->player_pos_x / MINI_MAP_BOX_ZIZE);
+// 	draw.y = ((int)stock->player->player_pos_y / MINI_MAP_BOX_ZIZE);
+// 	draw.i = draw.x - resize_the_map(stock);
+// }
 
 void draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color)
 {
@@ -177,7 +172,10 @@ void ray_intersept(t_stock *stock){
 	}
 	ddaLine(stock, xintercept_hori, yintercept_hori, RED);
 }
-
+/*
+	TODO:
+	You have to to fix the texture problem.
+*/
 double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 {
 	double	yintercept_hori;
@@ -248,7 +246,6 @@ double	 get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 		xintercept_verti += MINI_MAP_BOX_ZIZE;
 
 	yintercept_verti = stock->player->player_pos_y + (xintercept_verti - stock->player->player_pos_x) * tan(to_radians(ray_angle));
-	
 	xstep = MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_left)
 		xstep *= -1;
@@ -281,6 +278,52 @@ double	 get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 	return (INFINITY);
 }
 
+/*	TODO: you have a litle problem in the y if it's negative you have to know whay.
+	and x in the horisontal,
+*/
+
+int	get_xpm_color(t_stock *stock, t_texture *texture, int texture_offset_x, int texture_offset_y)
+{
+	int	color;
+	color = *(int*)(texture->addr + (texture_offset_y * texture->line_length + texture_offset_x * (texture->bits_per_pixel / 8)));
+	return (color);
+}
+
+void	draw_3d_projection(t_stock *stock)
+{
+	int		texture_offset_x;
+	int		texture_offset_y;
+	int		color;
+	for (int i =0; i < WIDTH; i++)
+	{
+		if (stock->rays[i]->was_hit_vertical)
+		{
+			texture_offset_x = (int)stock->rays[i]->vertical_wall_hit_y % MINI_MAP_BOX_ZIZE; 
+		}
+		else if (stock->rays[i]->was_hit_horizontal)
+		{
+			texture_offset_x = (int)stock->rays[i]->horizontal_wall_hit_x % MINI_MAP_BOX_ZIZE;
+		}
+		for (int j = (HIGTH / 2) - (stock->rays[i]->projection_distance / 2); j < (HIGTH / 2) + (stock->rays[i]->projection_distance / 2); j++)
+		{
+			texture_offset_y = (j - (stock->rays[i]->projection_distance / 2) - (HIGTH / 2)) * ((double)MINI_MAP_BOX_ZIZE / stock->rays[i]->projection_distance);// TODO: here you have to change the MINI_MAP_BOX_ZIZE to the real size of the texture height
+			if (texture_offset_y < 0)
+				texture_offset_y *= -1;
+			if (stock->rays[i]->was_hit_vertical)
+			{
+				color = get_xpm_color(stock, stock->texture[0], texture_offset_x, texture_offset_y);
+				my_mlx_pixel_put(stock->img, i, j, color);
+				
+			}
+			else if (stock->rays[i]->was_hit_horizontal)
+			{
+				color = get_xpm_color(stock, stock->texture[0], texture_offset_x, texture_offset_y);
+				my_mlx_pixel_put(stock->img, i, j, color);
+			}
+		}
+	}
+}
+
 void	ray_casting(t_stock *stock)
 {
 	double		horizontal_distance;
@@ -293,7 +336,6 @@ void	ray_casting(t_stock *stock)
 	ray_index = 0;
 	increment = (double)FOV / (double)WIDTH;
 	ray_angle = (stock->player->player_direction - (double)(FOV / 2));
-	// while (ray_index < 1)
 	while (ray_index < WIDTH)
 	{
 		ray_angle = normalize_angle(ray_angle);
@@ -305,38 +347,54 @@ void	ray_casting(t_stock *stock)
 			stock->rays[ray_index]->distance = horizontal_distance * cos(to_radians((stock->player->player_direction - ray_angle)));
 			stock->rays[ray_index]->was_hit_horizontal = true;
 			stock->rays[ray_index]->was_hit_vertical = false;
+			stock->rays[ray_index]->projection_distance = ((MINI_MAP_BOX_ZIZE) / (stock->rays[ray_index]->distance)) * ((double)WIDTH / 2) / tan(to_radians((double)FOV / 2));
+			if (stock->rays[ray_index]->projection_distance > HIGTH)
+				stock->rays[ray_index]->projection_distance = HIGTH;
+			else if (stock->rays[ray_index]->projection_distance < 0)
+				stock->rays[ray_index]->projection_distance = 0;
 		}
 		else
 		{
 			stock->rays[ray_index]->distance = vertical_distance * cos(to_radians((stock->player->player_direction - ray_angle)));
 			stock->rays[ray_index]->was_hit_horizontal = false;
 			stock->rays[ray_index]->was_hit_vertical = true;
+			stock->rays[ray_index]->projection_distance = ((MINI_MAP_BOX_ZIZE) / (stock->rays[ray_index]->distance)) * ((double)WIDTH / 2) / tan(to_radians((double)FOV / 2));
+			if (stock->rays[ray_index]->projection_distance > HIGTH)
+				stock->rays[ray_index]->projection_distance = HIGTH;
+			else if (stock->rays[ray_index]->projection_distance < 0)
+				stock->rays[ray_index]->projection_distance = 0;
 		}
 		ray_angle = (ray_angle + increment);
 		ray_index++;
 	}
-	ray_index = 0;
-	double	projection_distance;
-	int		j;
-	int		color;
-	while (stock->rays[ray_index])
-	{
-		projection_distance = ((MINI_MAP_BOX_ZIZE) / (stock->rays[ray_index]->distance)) * ((double)WIDTH / 2) / tan(to_radians((double)FOV / 2));
-		if (projection_distance > HIGTH)
-			projection_distance = HIGTH;
-		j = 0;
-		if (stock->rays[ray_index]->was_hit_vertical && stock->rays[ray_index]->is_ray_facing_right)
-			color = RED;
-		else if (stock->rays[ray_index]->was_hit_vertical && stock->rays[ray_index]->is_ray_facing_left)
-			color = BLUE;
-		else if (stock->rays[ray_index]->was_hit_horizontal && stock->rays[ray_index]->is_ray_facing_down)
-			color = GREEN;
-		else if (stock->rays[ray_index]->was_hit_horizontal && stock->rays[ray_index]->is_ray_facing_up)
-			color = YELLOW;
-		while (j < projection_distance)
-			my_mlx_pixel_put(stock->img, ray_index, (int)(HIGTH / 2 - projection_distance / 2) + j++, color);
-		ray_index++;
-	}
+	draw_3d_projection(stock);
+	// ray_index = 0;
+	// double	projection_distance;
+	// int		j;
+	// int		color;
+	// while (stock->rays[ray_index])
+	// {
+	// 	projection_distance = ((MINI_MAP_BOX_ZIZE) / (stock->rays[ray_index]->distance)) * ((double)WIDTH / 2) / tan(to_radians((double)FOV / 2));
+	// 	if (projection_distance > HIGTH)
+	// 		projection_distance = HIGTH;
+	// 	j = 0;
+	// 	if (stock->rays[ray_index]->was_hit_vertical && stock->rays[ray_index]->is_ray_facing_right)
+	// 		while (j < projection_distance)
+	// 			my_mlx_pixel_put(stock->img, ray_index, (int)(HIGTH / 2 - projection_distance / 2) + j++, RED);
+	// 	else if (stock->rays[ray_index]->was_hit_vertical && stock->rays[ray_index]->is_ray_facing_left)
+	// 		while (j < projection_distance)
+	// 			my_mlx_pixel_put(stock->img, ray_index, (int)(HIGTH / 2 - projection_distance / 2) + j++, BLUE);
+	// 	else if (stock->rays[ray_index]->was_hit_horizontal && stock->rays[ray_index]->is_ray_facing_down)
+	// 	{
+	// 		while (j < projection_distance)
+	// 			my_mlx_pixel_put(stock->img, ray_index, (int)(HIGTH / 2 - projection_distance / 2) + j++, BLUE);
+	// 		// draw_texture(stock, ray_index, (int)(HIGTH / 2 - projection_distance / 2), projection_distance);
+	// 	}
+	// 	else if (stock->rays[ray_index]->was_hit_horizontal && stock->rays[ray_index]->is_ray_facing_up)
+	// 		while (j < projection_distance)
+	// 			my_mlx_pixel_put(stock->img, ray_index, (int)(HIGTH / 2 - projection_distance / 2) + j++, YELLOW);
+	// 	ray_index++;
+	// }
 }
 
 void draw_floor_and_ceiling(t_stock *stock)
@@ -363,10 +421,8 @@ void draw_floor_and_ceiling(t_stock *stock)
 
 void	draw_every_thing(t_stock *stock)
 {
-	
 	draw_floor_and_ceiling(stock);
 	ray_casting(stock);
-	draw_mini_map(stock);
 }
 
 int	update(t_stock *stock)
