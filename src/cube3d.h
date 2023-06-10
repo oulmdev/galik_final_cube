@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/09 19:07:57 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/09 23:05:38 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
 # define MINI_MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
 # define MINI_MAP_SIZE 3
-# define SPEED 4
-# define TURNSPEED 3
+# define SPEED 5
+# define TURNSPEED 2
 # define WIDTH 1080
 # define HIGTH 768
 
