@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   textureChecker.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: imahri <imahri@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 16:55:44 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/05/16 21:20:59 by imahri           ###   ########.fr       */
+/*   Updated: 2023/06/12 20:23:20 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ bool	fill_the_stock_textures(char **str, char *texture, t_stock *stock)
 	return (true);
 }
 
-bool	handle_texture(char **str, t_pars *pars, t_stock *stock)
+bool	handle_texture(char **str, t_tools *pars, t_stock *stock)
 {
 	int	i;
 
@@ -116,7 +116,7 @@ bool	handle_texture(char **str, t_pars *pars, t_stock *stock)
 	return (print(ERROR_TEXTURE_COLORS, 2), false);
 }
 
-bool	ceiling_and_floor(char **line, t_pars *pars, t_stock *stock)
+bool	ceiling_and_floor(char **line, t_tools *pars, t_stock *stock)
 {
 	int	i;
 

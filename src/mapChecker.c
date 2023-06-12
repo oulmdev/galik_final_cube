@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:00:08 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/05/23 02:38:13 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/12 20:22:54 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	**realloc_map(char **tab, int y, int x)
 	return (fill_the_new_map(new_tab, tab));
 }
 
-bool	norm_check_close(t_pars *pars, char **tab)
+bool	norm_check_close(t_tools *pars, char **tab)
 {
 	if (tab[pars->x][pars->y] == 'N' || tab[pars->x][pars->y] == 'S'
 		|| tab[pars->x][pars->y] == 'E' || tab[pars->x][pars->y] == 'W')
@@ -73,9 +73,9 @@ bool	norm_check_close(t_pars *pars, char **tab)
 
 bool	check_close(char **tab)
 {
-	t_pars	pars;
+	t_tools	pars;
 
-	ft_memset(&pars, 0, sizeof(t_pars));
+	ft_memset(&pars, 0, sizeof(t_tools));
 	while (tab && tab[pars.len])
 		pars.len++;
 	while (tab && tab[pars.x])

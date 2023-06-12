@@ -1,1024 +1,1080 @@
-ray[0]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[1]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[2]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[3]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[4]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[5]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[6]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[7]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[8]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[9]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[10]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[11]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[12]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[13]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[14]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[15]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[16]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[17]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[18]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[19]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[20]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[21]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[22]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[23]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[24]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[25]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[26]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[27]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[28]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[29]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[30]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[31]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[32]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[33]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[34]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[35]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[36]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[37]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[38]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[39]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[40]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[41]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[42]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[43]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[44]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[45]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[46]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[47]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[48]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[49]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[50]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[51]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[52]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[53]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[54]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[55]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[56]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[57]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[58]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[59]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[60]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[61]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[62]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[63]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[64]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[65]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[66]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[67]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[68]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[69]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[70]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[71]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[72]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[73]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[74]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[75]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[76]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[77]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[78]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[79]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[80]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[81]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[82]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[83]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[84]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[85]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[86]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[87]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[88]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[89]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[90]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[91]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[92]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[93]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[94]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[95]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[96]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[97]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[98]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[99]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[100]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[101]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[102]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[103]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[104]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[105]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[106]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[107]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[108]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[109]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[110]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[111]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[112]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[113]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[114]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[115]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[116]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[117]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[118]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[119]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[120]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[121]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[122]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[123]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[124]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[125]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[126]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[127]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[128]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[129]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[130]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[131]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[132]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[133]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[134]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[135]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[136]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[137]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[138]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[139]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[140]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[141]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[142]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[143]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[144]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[145]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[146]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[147]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[148]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[149]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[150]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[151]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[152]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[153]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[154]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[155]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[156]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[157]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[158]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[159]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[160]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[161]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[162]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[163]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[164]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[165]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[166]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[167]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[168]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[169]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[170]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[171]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[172]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[173]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[174]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[175]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[176]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[177]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[178]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[179]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[180]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[181]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[182]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[183]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[184]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[185]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[186]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[187]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[188]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[189]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[190]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[191]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[192]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[193]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[194]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[195]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[196]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[197]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[198]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[199]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[200]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[201]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[202]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[203]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[204]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[205]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[206]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[207]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[208]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[209]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[210]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[211]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[212]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[213]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[214]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[215]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[216]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[217]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[218]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[219]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[220]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[221]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[222]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[223]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[224]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[225]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[226]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[227]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[228]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[229]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[230]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[231]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[232]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[233]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[234]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[235]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[236]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[237]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[238]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[239]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[240]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[241]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[242]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[243]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[244]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[245]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[246]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[247]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[248]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[249]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[250]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[251]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[252]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[253]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[254]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[255]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[256]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[257]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[258]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[259]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[260]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[261]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[262]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[263]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[264]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[265]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[266]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[267]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[268]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[269]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[270]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[271]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[272]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[273]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[274]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[275]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[276]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[277]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[278]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[279]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[280]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[281]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[282]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[283]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[284]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[285]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[286]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[287]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[288]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[289]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[290]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[291]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[292]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[293]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[294]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[295]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[296]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[297]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[298]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[299]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[300]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[301]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[302]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[303]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[304]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[305]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[306]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[307]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[308]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[309]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[310]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[311]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[312]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[313]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[314]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[315]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[316]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[317]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[318]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[319]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[320]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[321]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[322]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[323]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[324]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[325]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[326]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[327]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[328]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[329]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[330]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[331]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[332]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[333]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[334]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[335]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[336]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[337]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[338]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[339]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[340]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[341]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[342]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[343]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[344]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[345]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[346]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[347]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[348]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[349]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[350]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[351]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[352]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[353]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[354]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[355]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[356]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[357]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[358]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[359]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[360]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[361]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[362]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[363]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[364]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[365]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[366]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[367]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[368]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[369]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[370]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[371]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[372]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[373]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[374]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[375]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[376]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[377]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[378]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[379]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[380]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[381]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[382]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[383]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[384]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[385]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[386]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[387]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[388]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[389]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[390]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[391]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[392]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[393]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[394]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[395]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[396]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[397]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[398]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[399]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[400]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[401]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[402]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[403]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[404]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[405]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[406]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[407]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[408]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[409]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[410]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[411]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[412]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[413]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[414]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[415]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[416]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[417]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[418]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[419]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[420]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[421]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[422]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[423]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[424]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[425]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[426]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[427]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[428]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[429]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[430]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[431]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[432]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[433]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[434]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[435]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[436]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[437]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[438]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[439]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[440]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[441]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[442]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[443]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[444]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[445]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[446]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[447]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[448]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[449]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[450]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[451]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[452]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[453]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[454]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[455]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[456]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[457]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[458]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[459]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[460]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[461]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[462]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[463]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[464]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[465]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[466]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[467]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[468]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[469]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[470]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[471]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[472]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[473]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[474]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[475]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[476]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[477]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[478]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[479]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[480]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[481]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[482]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[483]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[484]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[485]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[486]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[487]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[488]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[489]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[490]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[491]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[492]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[493]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[494]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[495]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[496]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[497]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[498]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[499]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[500]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[501]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[502]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[503]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[504]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[505]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[506]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[507]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[508]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[509]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[510]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[511]->horizontal_hit = 0 down = 1 up = 0 left = 1 right = 0
-ray[512]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[513]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[514]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[515]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[516]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[517]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[518]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[519]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[520]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[521]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[522]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[523]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[524]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[525]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[526]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[527]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[528]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[529]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[530]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[531]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[532]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[533]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[534]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[535]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[536]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[537]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[538]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[539]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[540]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[541]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[542]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[543]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[544]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[545]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[546]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[547]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[548]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[549]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[550]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[551]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[552]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[553]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[554]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[555]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[556]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[557]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[558]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[559]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[560]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[561]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[562]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[563]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[564]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[565]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[566]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[567]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[568]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[569]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[570]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[571]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[572]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[573]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[574]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[575]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[576]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[577]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[578]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[579]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[580]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[581]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[582]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[583]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[584]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[585]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[586]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[587]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[588]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[589]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[590]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[591]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[592]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[593]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[594]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[595]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[596]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[597]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[598]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[599]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[600]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[601]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[602]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[603]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[604]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[605]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[606]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[607]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[608]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[609]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[610]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[611]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[612]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[613]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[614]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[615]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[616]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[617]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[618]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[619]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[620]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[621]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[622]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[623]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[624]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[625]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[626]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[627]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[628]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[629]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[630]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[631]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[632]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[633]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[634]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[635]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[636]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[637]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[638]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[639]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[640]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[641]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[642]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[643]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[644]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[645]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[646]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[647]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[648]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[649]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[650]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[651]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[652]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[653]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[654]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[655]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[656]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[657]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[658]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[659]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[660]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[661]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[662]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[663]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[664]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[665]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[666]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[667]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[668]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[669]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[670]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[671]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[672]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[673]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[674]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[675]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[676]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[677]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[678]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[679]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[680]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[681]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[682]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[683]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[684]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[685]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[686]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[687]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[688]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[689]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[690]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[691]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[692]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[693]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[694]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[695]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[696]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[697]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[698]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[699]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[700]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[701]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[702]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[703]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[704]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[705]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[706]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[707]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[708]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[709]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[710]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[711]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[712]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[713]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[714]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[715]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[716]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[717]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[718]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[719]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[720]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[721]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[722]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[723]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[724]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[725]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[726]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[727]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[728]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[729]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[730]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[731]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[732]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[733]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[734]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[735]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[736]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[737]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[738]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[739]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[740]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[741]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[742]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[743]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[744]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[745]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[746]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[747]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[748]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[749]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[750]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[751]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[752]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[753]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[754]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[755]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[756]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[757]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[758]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[759]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[760]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[761]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[762]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[763]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[764]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[765]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[766]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[767]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[768]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[769]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[770]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[771]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[772]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[773]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[774]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[775]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[776]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[777]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[778]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[779]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[780]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[781]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[782]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[783]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[784]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[785]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[786]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[787]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[788]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[789]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[790]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[791]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[792]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[793]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[794]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[795]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[796]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[797]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[798]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[799]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[800]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[801]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[802]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[803]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[804]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[805]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[806]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[807]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[808]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[809]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[810]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[811]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[812]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[813]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[814]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[815]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[816]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[817]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[818]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[819]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[820]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[821]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[822]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[823]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[824]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[825]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[826]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[827]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[828]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[829]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[830]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[831]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[832]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[833]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[834]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[835]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[836]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[837]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[838]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[839]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[840]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[841]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[842]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[843]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[844]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[845]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[846]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[847]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[848]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[849]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[850]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[851]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[852]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[853]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[854]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[855]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[856]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[857]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[858]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[859]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[860]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[861]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[862]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[863]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[864]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[865]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[866]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[867]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[868]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[869]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[870]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[871]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[872]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[873]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[874]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[875]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[876]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[877]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[878]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[879]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[880]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[881]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[882]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[883]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[884]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[885]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[886]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[887]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[888]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[889]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[890]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[891]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[892]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[893]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[894]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[895]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[896]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[897]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[898]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[899]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[900]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[901]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[902]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[903]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[904]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[905]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[906]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[907]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[908]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[909]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[910]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[911]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[912]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[913]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[914]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[915]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[916]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[917]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[918]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[919]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[920]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[921]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[922]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[923]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[924]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[925]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[926]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[927]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[928]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[929]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[930]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[931]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[932]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[933]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[934]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[935]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[936]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[937]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[938]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[939]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[940]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[941]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[942]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[943]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[944]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[945]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[946]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[947]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[948]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[949]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[950]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[951]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[952]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[953]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[954]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[955]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[956]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[957]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[958]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[959]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[960]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[961]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[962]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[963]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[964]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[965]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[966]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[967]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[968]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[969]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[970]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[971]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[972]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[973]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[974]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[975]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[976]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[977]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[978]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[979]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[980]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[981]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[982]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[983]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[984]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[985]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[986]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[987]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[988]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[989]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[990]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[991]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[992]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[993]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[994]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[995]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[996]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[997]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[998]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[999]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1000]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1001]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1002]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1003]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1004]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1005]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1006]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1007]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1008]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1009]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1010]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1011]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1012]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1013]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1014]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1015]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1016]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1017]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1018]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1019]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1020]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1021]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1022]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
-ray[1023]->horizontal_hit = 0 down = 0 up = 1 left = 1 right = 0
+ray_angle = 330.000000
+ray_angle = 330.055556
+ray_angle = 330.111111
+ray_angle = 330.166667
+ray_angle = 330.222222
+ray_angle = 330.277778
+ray_angle = 330.333333
+ray_angle = 330.388889
+ray_angle = 330.444444
+ray_angle = 330.500000
+ray_angle = 330.555556
+ray_angle = 330.611111
+ray_angle = 330.666667
+ray_angle = 330.722222
+ray_angle = 330.777778
+ray_angle = 330.833333
+ray_angle = 330.888889
+ray_angle = 330.944444
+ray_angle = 331.000000
+ray_angle = 331.055556
+ray_angle = 331.111111
+ray_angle = 331.166667
+ray_angle = 331.222222
+ray_angle = 331.277778
+ray_angle = 331.333333
+ray_angle = 331.388889
+ray_angle = 331.444444
+ray_angle = 331.500000
+ray_angle = 331.555556
+ray_angle = 331.611111
+ray_angle = 331.666667
+ray_angle = 331.722222
+ray_angle = 331.777778
+ray_angle = 331.833333
+ray_angle = 331.888889
+ray_angle = 331.944444
+ray_angle = 332.000000
+ray_angle = 332.055556
+ray_angle = 332.111111
+ray_angle = 332.166667
+ray_angle = 332.222222
+ray_angle = 332.277778
+ray_angle = 332.333333
+ray_angle = 332.388889
+ray_angle = 332.444444
+ray_angle = 332.500000
+ray_angle = 332.555556
+ray_angle = 332.611111
+ray_angle = 332.666667
+ray_angle = 332.722222
+ray_angle = 332.777778
+ray_angle = 332.833333
+ray_angle = 332.888889
+ray_angle = 332.944444
+ray_angle = 333.000000
+ray_angle = 333.055556
+ray_angle = 333.111111
+ray_angle = 333.166667
+ray_angle = 333.222222
+ray_angle = 333.277778
+ray_angle = 333.333333
+ray_angle = 333.388889
+ray_angle = 333.444444
+ray_angle = 333.500000
+ray_angle = 333.555556
+ray_angle = 333.611111
+ray_angle = 333.666667
+ray_angle = 333.722222
+ray_angle = 333.777778
+ray_angle = 333.833333
+ray_angle = 333.888889
+ray_angle = 333.944444
+ray_angle = 334.000000
+ray_angle = 334.055556
+ray_angle = 334.111111
+ray_angle = 334.166667
+ray_angle = 334.222222
+ray_angle = 334.277778
+ray_angle = 334.333333
+ray_angle = 334.388889
+ray_angle = 334.444444
+ray_angle = 334.500000
+ray_angle = 334.555556
+ray_angle = 334.611111
+ray_angle = 334.666667
+ray_angle = 334.722222
+ray_angle = 334.777778
+ray_angle = 334.833333
+ray_angle = 334.888889
+ray_angle = 334.944444
+ray_angle = 335.000000
+ray_angle = 335.055556
+ray_angle = 335.111111
+ray_angle = 335.166667
+ray_angle = 335.222222
+ray_angle = 335.277778
+ray_angle = 335.333333
+ray_angle = 335.388889
+ray_angle = 335.444444
+ray_angle = 335.500000
+ray_angle = 335.555556
+ray_angle = 335.611111
+ray_angle = 335.666667
+ray_angle = 335.722222
+ray_angle = 335.777778
+ray_angle = 335.833333
+ray_angle = 335.888889
+ray_angle = 335.944444
+ray_angle = 336.000000
+ray_angle = 336.055556
+ray_angle = 336.111111
+ray_angle = 336.166667
+ray_angle = 336.222222
+ray_angle = 336.277778
+ray_angle = 336.333333
+ray_angle = 336.388889
+ray_angle = 336.444444
+ray_angle = 336.500000
+ray_angle = 336.555556
+ray_angle = 336.611111
+ray_angle = 336.666667
+ray_angle = 336.722222
+ray_angle = 336.777778
+ray_angle = 336.833333
+ray_angle = 336.888889
+ray_angle = 336.944444
+ray_angle = 337.000000
+ray_angle = 337.055556
+ray_angle = 337.111111
+ray_angle = 337.166667
+ray_angle = 337.222222
+ray_angle = 337.277778
+ray_angle = 337.333333
+ray_angle = 337.388889
+ray_angle = 337.444444
+ray_angle = 337.500000
+ray_angle = 337.555556
+ray_angle = 337.611111
+ray_angle = 337.666667
+ray_angle = 337.722222
+ray_angle = 337.777778
+ray_angle = 337.833333
+ray_angle = 337.888889
+ray_angle = 337.944444
+ray_angle = 338.000000
+ray_angle = 338.055556
+ray_angle = 338.111111
+ray_angle = 338.166667
+ray_angle = 338.222222
+ray_angle = 338.277778
+ray_angle = 338.333333
+ray_angle = 338.388889
+ray_angle = 338.444444
+ray_angle = 338.500000
+ray_angle = 338.555556
+ray_angle = 338.611111
+ray_angle = 338.666667
+ray_angle = 338.722222
+ray_angle = 338.777778
+ray_angle = 338.833333
+ray_angle = 338.888889
+ray_angle = 338.944444
+ray_angle = 339.000000
+ray_angle = 339.055556
+ray_angle = 339.111111
+ray_angle = 339.166667
+ray_angle = 339.222222
+ray_angle = 339.277778
+ray_angle = 339.333333
+ray_angle = 339.388889
+ray_angle = 339.444444
+ray_angle = 339.500000
+ray_angle = 339.555556
+ray_angle = 339.611111
+ray_angle = 339.666667
+ray_angle = 339.722222
+ray_angle = 339.777778
+ray_angle = 339.833333
+ray_angle = 339.888889
+ray_angle = 339.944444
+ray_angle = 340.000000
+ray_angle = 340.055556
+ray_angle = 340.111111
+ray_angle = 340.166667
+ray_angle = 340.222222
+ray_angle = 340.277778
+ray_angle = 340.333333
+ray_angle = 340.388889
+ray_angle = 340.444444
+ray_angle = 340.500000
+ray_angle = 340.555556
+ray_angle = 340.611111
+ray_angle = 340.666667
+ray_angle = 340.722222
+ray_angle = 340.777778
+ray_angle = 340.833333
+ray_angle = 340.888889
+ray_angle = 340.944444
+ray_angle = 341.000000
+ray_angle = 341.055556
+ray_angle = 341.111111
+ray_angle = 341.166667
+ray_angle = 341.222222
+ray_angle = 341.277778
+ray_angle = 341.333333
+ray_angle = 341.388889
+ray_angle = 341.444444
+ray_angle = 341.500000
+ray_angle = 341.555556
+ray_angle = 341.611111
+ray_angle = 341.666667
+ray_angle = 341.722222
+ray_angle = 341.777778
+ray_angle = 341.833333
+ray_angle = 341.888889
+ray_angle = 341.944444
+ray_angle = 342.000000
+ray_angle = 342.055556
+ray_angle = 342.111111
+ray_angle = 342.166667
+ray_angle = 342.222222
+ray_angle = 342.277778
+ray_angle = 342.333333
+ray_angle = 342.388889
+ray_angle = 342.444444
+ray_angle = 342.500000
+ray_angle = 342.555556
+ray_angle = 342.611111
+ray_angle = 342.666667
+ray_angle = 342.722222
+ray_angle = 342.777778
+ray_angle = 342.833333
+ray_angle = 342.888889
+ray_angle = 342.944444
+ray_angle = 343.000000
+ray_angle = 343.055556
+ray_angle = 343.111111
+ray_angle = 343.166667
+ray_angle = 343.222222
+ray_angle = 343.277778
+ray_angle = 343.333333
+ray_angle = 343.388889
+ray_angle = 343.444444
+ray_angle = 343.500000
+ray_angle = 343.555556
+ray_angle = 343.611111
+ray_angle = 343.666667
+ray_angle = 343.722222
+ray_angle = 343.777778
+ray_angle = 343.833333
+ray_angle = 343.888889
+ray_angle = 343.944444
+ray_angle = 344.000000
+ray_angle = 344.055556
+ray_angle = 344.111111
+ray_angle = 344.166667
+ray_angle = 344.222222
+ray_angle = 344.277778
+ray_angle = 344.333333
+ray_angle = 344.388889
+ray_angle = 344.444444
+ray_angle = 344.500000
+ray_angle = 344.555556
+ray_angle = 344.611111
+ray_angle = 344.666667
+ray_angle = 344.722222
+ray_angle = 344.777778
+ray_angle = 344.833333
+ray_angle = 344.888889
+ray_angle = 344.944444
+ray_angle = 345.000000
+ray_angle = 345.055556
+ray_angle = 345.111111
+ray_angle = 345.166667
+ray_angle = 345.222222
+ray_angle = 345.277778
+ray_angle = 345.333333
+ray_angle = 345.388889
+ray_angle = 345.444444
+ray_angle = 345.500000
+ray_angle = 345.555556
+ray_angle = 345.611111
+ray_angle = 345.666667
+ray_angle = 345.722222
+ray_angle = 345.777778
+ray_angle = 345.833333
+ray_angle = 345.888889
+ray_angle = 345.944444
+ray_angle = 346.000000
+ray_angle = 346.055556
+ray_angle = 346.111111
+ray_angle = 346.166667
+ray_angle = 346.222222
+ray_angle = 346.277778
+ray_angle = 346.333333
+ray_angle = 346.388889
+ray_angle = 346.444444
+ray_angle = 346.500000
+ray_angle = 346.555556
+ray_angle = 346.611111
+ray_angle = 346.666667
+ray_angle = 346.722222
+ray_angle = 346.777778
+ray_angle = 346.833333
+ray_angle = 346.888889
+ray_angle = 346.944444
+ray_angle = 347.000000
+ray_angle = 347.055556
+ray_angle = 347.111111
+ray_angle = 347.166667
+ray_angle = 347.222222
+ray_angle = 347.277778
+ray_angle = 347.333333
+ray_angle = 347.388889
+ray_angle = 347.444444
+ray_angle = 347.500000
+ray_angle = 347.555556
+ray_angle = 347.611111
+ray_angle = 347.666667
+ray_angle = 347.722222
+ray_angle = 347.777778
+ray_angle = 347.833333
+ray_angle = 347.888889
+ray_angle = 347.944444
+ray_angle = 348.000000
+ray_angle = 348.055556
+ray_angle = 348.111111
+ray_angle = 348.166667
+ray_angle = 348.222222
+ray_angle = 348.277778
+ray_angle = 348.333333
+ray_angle = 348.388889
+ray_angle = 348.444444
+ray_angle = 348.500000
+ray_angle = 348.555556
+ray_angle = 348.611111
+ray_angle = 348.666667
+ray_angle = 348.722222
+ray_angle = 348.777778
+ray_angle = 348.833333
+ray_angle = 348.888889
+ray_angle = 348.944444
+ray_angle = 349.000000
+ray_angle = 349.055556
+ray_angle = 349.111111
+ray_angle = 349.166667
+ray_angle = 349.222222
+ray_angle = 349.277778
+ray_angle = 349.333333
+ray_angle = 349.388889
+ray_angle = 349.444444
+ray_angle = 349.500000
+ray_angle = 349.555556
+ray_angle = 349.611111
+ray_angle = 349.666667
+ray_angle = 349.722222
+ray_angle = 349.777778
+ray_angle = 349.833333
+ray_angle = 349.888889
+ray_angle = 349.944444
+ray_angle = 350.000000
+ray_angle = 350.055556
+ray_angle = 350.111111
+ray_angle = 350.166667
+ray_angle = 350.222222
+ray_angle = 350.277778
+ray_angle = 350.333333
+ray_angle = 350.388889
+ray_angle = 350.444444
+ray_angle = 350.500000
+ray_angle = 350.555556
+ray_angle = 350.611111
+ray_angle = 350.666667
+ray_angle = 350.722222
+ray_angle = 350.777778
+ray_angle = 350.833333
+ray_angle = 350.888889
+ray_angle = 350.944444
+ray_angle = 351.000000
+ray_angle = 351.055556
+ray_angle = 351.111111
+ray_angle = 351.166667
+ray_angle = 351.222222
+ray_angle = 351.277778
+ray_angle = 351.333333
+ray_angle = 351.388889
+ray_angle = 351.444444
+ray_angle = 351.500000
+ray_angle = 351.555556
+ray_angle = 351.611111
+ray_angle = 351.666667
+ray_angle = 351.722222
+ray_angle = 351.777778
+ray_angle = 351.833333
+ray_angle = 351.888889
+ray_angle = 351.944444
+ray_angle = 352.000000
+ray_angle = 352.055556
+ray_angle = 352.111111
+ray_angle = 352.166667
+ray_angle = 352.222222
+ray_angle = 352.277778
+ray_angle = 352.333333
+ray_angle = 352.388889
+ray_angle = 352.444444
+ray_angle = 352.500000
+ray_angle = 352.555556
+ray_angle = 352.611111
+ray_angle = 352.666667
+ray_angle = 352.722222
+ray_angle = 352.777778
+ray_angle = 352.833333
+ray_angle = 352.888889
+ray_angle = 352.944444
+ray_angle = 353.000000
+ray_angle = 353.055556
+ray_angle = 353.111111
+ray_angle = 353.166667
+ray_angle = 353.222222
+ray_angle = 353.277778
+ray_angle = 353.333333
+ray_angle = 353.388889
+ray_angle = 353.444444
+ray_angle = 353.500000
+ray_angle = 353.555556
+ray_angle = 353.611111
+ray_angle = 353.666667
+ray_angle = 353.722222
+ray_angle = 353.777778
+ray_angle = 353.833333
+ray_angle = 353.888889
+ray_angle = 353.944444
+ray_angle = 354.000000
+ray_angle = 354.055556
+ray_angle = 354.111111
+ray_angle = 354.166667
+ray_angle = 354.222222
+ray_angle = 354.277778
+ray_angle = 354.333333
+ray_angle = 354.388889
+ray_angle = 354.444444
+ray_angle = 354.500000
+ray_angle = 354.555556
+ray_angle = 354.611111
+ray_angle = 354.666667
+ray_angle = 354.722222
+ray_angle = 354.777778
+ray_angle = 354.833333
+ray_angle = 354.888889
+ray_angle = 354.944444
+ray_angle = 355.000000
+ray_angle = 355.055556
+ray_angle = 355.111111
+ray_angle = 355.166667
+ray_angle = 355.222222
+ray_angle = 355.277778
+ray_angle = 355.333333
+ray_angle = 355.388889
+ray_angle = 355.444444
+ray_angle = 355.500000
+ray_angle = 355.555556
+ray_angle = 355.611111
+ray_angle = 355.666667
+ray_angle = 355.722222
+ray_angle = 355.777778
+ray_angle = 355.833333
+ray_angle = 355.888889
+ray_angle = 355.944444
+ray_angle = 356.000000
+ray_angle = 356.055556
+ray_angle = 356.111111
+ray_angle = 356.166667
+ray_angle = 356.222222
+ray_angle = 356.277778
+ray_angle = 356.333333
+ray_angle = 356.388889
+ray_angle = 356.444444
+ray_angle = 356.500000
+ray_angle = 356.555556
+ray_angle = 356.611111
+ray_angle = 356.666667
+ray_angle = 356.722222
+ray_angle = 356.777778
+ray_angle = 356.833333
+ray_angle = 356.888889
+ray_angle = 356.944444
+ray_angle = 357.000000
+ray_angle = 357.055556
+ray_angle = 357.111111
+ray_angle = 357.166667
+ray_angle = 357.222222
+ray_angle = 357.277778
+ray_angle = 357.333333
+ray_angle = 357.388889
+ray_angle = 357.444444
+ray_angle = 357.500000
+ray_angle = 357.555556
+ray_angle = 357.611111
+ray_angle = 357.666667
+ray_angle = 357.722222
+ray_angle = 357.777778
+ray_angle = 357.833333
+ray_angle = 357.888889
+ray_angle = 357.944444
+ray_angle = 358.000000
+ray_angle = 358.055556
+ray_angle = 358.111111
+ray_angle = 358.166667
+ray_angle = 358.222222
+ray_angle = 358.277778
+ray_angle = 358.333333
+ray_angle = 358.388889
+ray_angle = 358.444444
+ray_angle = 358.500000
+ray_angle = 358.555556
+ray_angle = 358.611111
+ray_angle = 358.666667
+ray_angle = 358.722222
+ray_angle = 358.777778
+ray_angle = 358.833333
+ray_angle = 358.888889
+ray_angle = 358.944444
+ray_angle = 359.000000
+ray_angle = 359.055556
+ray_angle = 359.111111
+ray_angle = 359.166667
+ray_angle = 359.222222
+ray_angle = 359.277778
+ray_angle = 359.333333
+ray_angle = 359.388889
+ray_angle = 359.444444
+ray_angle = 359.500000
+ray_angle = 359.555556
+ray_angle = 359.611111
+ray_angle = 359.666667
+ray_angle = 359.722222
+ray_angle = 359.777778
+ray_angle = 359.833333
+ray_angle = 359.888889
+ray_angle = 359.944444
+ray_angle = 360.000000
+ray_angle = 0.055556
+ray_angle = 0.111111
+ray_angle = 0.166667
+ray_angle = 0.222222
+ray_angle = 0.277778
+ray_angle = 0.333333
+ray_angle = 0.388889
+ray_angle = 0.444444
+ray_angle = 0.500000
+ray_angle = 0.555556
+ray_angle = 0.611111
+ray_angle = 0.666667
+ray_angle = 0.722222
+ray_angle = 0.777778
+ray_angle = 0.833333
+ray_angle = 0.888889
+ray_angle = 0.944444
+ray_angle = 1.000000
+ray_angle = 1.055556
+ray_angle = 1.111111
+ray_angle = 1.166667
+ray_angle = 1.222222
+ray_angle = 1.277778
+ray_angle = 1.333333
+ray_angle = 1.388889
+ray_angle = 1.444444
+ray_angle = 1.500000
+ray_angle = 1.555556
+ray_angle = 1.611111
+ray_angle = 1.666667
+ray_angle = 1.722222
+ray_angle = 1.777778
+ray_angle = 1.833333
+ray_angle = 1.888889
+ray_angle = 1.944444
+ray_angle = 2.000000
+ray_angle = 2.055556
+ray_angle = 2.111111
+ray_angle = 2.166667
+ray_angle = 2.222222
+ray_angle = 2.277778
+ray_angle = 2.333333
+ray_angle = 2.388889
+ray_angle = 2.444444
+ray_angle = 2.500000
+ray_angle = 2.555556
+ray_angle = 2.611111
+ray_angle = 2.666667
+ray_angle = 2.722222
+ray_angle = 2.777778
+ray_angle = 2.833333
+ray_angle = 2.888889
+ray_angle = 2.944444
+ray_angle = 3.000000
+ray_angle = 3.055556
+ray_angle = 3.111111
+ray_angle = 3.166667
+ray_angle = 3.222222
+ray_angle = 3.277778
+ray_angle = 3.333333
+ray_angle = 3.388889
+ray_angle = 3.444444
+ray_angle = 3.500000
+ray_angle = 3.555556
+ray_angle = 3.611111
+ray_angle = 3.666667
+ray_angle = 3.722222
+ray_angle = 3.777778
+ray_angle = 3.833333
+ray_angle = 3.888889
+ray_angle = 3.944444
+ray_angle = 4.000000
+ray_angle = 4.055556
+ray_angle = 4.111111
+ray_angle = 4.166667
+ray_angle = 4.222222
+ray_angle = 4.277778
+ray_angle = 4.333333
+ray_angle = 4.388889
+ray_angle = 4.444444
+ray_angle = 4.500000
+ray_angle = 4.555556
+ray_angle = 4.611111
+ray_angle = 4.666667
+ray_angle = 4.722222
+ray_angle = 4.777778
+ray_angle = 4.833333
+ray_angle = 4.888889
+ray_angle = 4.944444
+ray_angle = 5.000000
+ray_angle = 5.055556
+ray_angle = 5.111111
+ray_angle = 5.166667
+ray_angle = 5.222222
+ray_angle = 5.277778
+ray_angle = 5.333333
+ray_angle = 5.388889
+ray_angle = 5.444444
+ray_angle = 5.500000
+ray_angle = 5.555556
+ray_angle = 5.611111
+ray_angle = 5.666667
+ray_angle = 5.722222
+ray_angle = 5.777778
+ray_angle = 5.833333
+ray_angle = 5.888889
+ray_angle = 5.944444
+ray_angle = 6.000000
+ray_angle = 6.055556
+ray_angle = 6.111111
+ray_angle = 6.166667
+ray_angle = 6.222222
+ray_angle = 6.277778
+ray_angle = 6.333333
+ray_angle = 6.388889
+ray_angle = 6.444444
+ray_angle = 6.500000
+ray_angle = 6.555556
+ray_angle = 6.611111
+ray_angle = 6.666667
+ray_angle = 6.722222
+ray_angle = 6.777778
+ray_angle = 6.833333
+ray_angle = 6.888889
+ray_angle = 6.944444
+ray_angle = 7.000000
+ray_angle = 7.055556
+ray_angle = 7.111111
+ray_angle = 7.166667
+ray_angle = 7.222222
+ray_angle = 7.277778
+ray_angle = 7.333333
+ray_angle = 7.388889
+ray_angle = 7.444444
+ray_angle = 7.500000
+ray_angle = 7.555556
+ray_angle = 7.611111
+ray_angle = 7.666667
+ray_angle = 7.722222
+ray_angle = 7.777778
+ray_angle = 7.833333
+ray_angle = 7.888889
+ray_angle = 7.944444
+ray_angle = 8.000000
+ray_angle = 8.055556
+ray_angle = 8.111111
+ray_angle = 8.166667
+ray_angle = 8.222222
+ray_angle = 8.277778
+ray_angle = 8.333333
+ray_angle = 8.388889
+ray_angle = 8.444444
+ray_angle = 8.500000
+ray_angle = 8.555556
+ray_angle = 8.611111
+ray_angle = 8.666667
+ray_angle = 8.722222
+ray_angle = 8.777778
+ray_angle = 8.833333
+ray_angle = 8.888889
+ray_angle = 8.944444
+ray_angle = 9.000000
+ray_angle = 9.055556
+ray_angle = 9.111111
+ray_angle = 9.166667
+ray_angle = 9.222222
+ray_angle = 9.277778
+ray_angle = 9.333333
+ray_angle = 9.388889
+ray_angle = 9.444444
+ray_angle = 9.500000
+ray_angle = 9.555556
+ray_angle = 9.611111
+ray_angle = 9.666667
+ray_angle = 9.722222
+ray_angle = 9.777778
+ray_angle = 9.833333
+ray_angle = 9.888889
+ray_angle = 9.944444
+ray_angle = 10.000000
+ray_angle = 10.055556
+ray_angle = 10.111111
+ray_angle = 10.166667
+ray_angle = 10.222222
+ray_angle = 10.277778
+ray_angle = 10.333333
+ray_angle = 10.388889
+ray_angle = 10.444444
+ray_angle = 10.500000
+ray_angle = 10.555556
+ray_angle = 10.611111
+ray_angle = 10.666667
+ray_angle = 10.722222
+ray_angle = 10.777778
+ray_angle = 10.833333
+ray_angle = 10.888889
+ray_angle = 10.944444
+ray_angle = 11.000000
+ray_angle = 11.055556
+ray_angle = 11.111111
+ray_angle = 11.166667
+ray_angle = 11.222222
+ray_angle = 11.277778
+ray_angle = 11.333333
+ray_angle = 11.388889
+ray_angle = 11.444444
+ray_angle = 11.500000
+ray_angle = 11.555556
+ray_angle = 11.611111
+ray_angle = 11.666667
+ray_angle = 11.722222
+ray_angle = 11.777778
+ray_angle = 11.833333
+ray_angle = 11.888889
+ray_angle = 11.944444
+ray_angle = 12.000000
+ray_angle = 12.055556
+ray_angle = 12.111111
+ray_angle = 12.166667
+ray_angle = 12.222222
+ray_angle = 12.277778
+ray_angle = 12.333333
+ray_angle = 12.388889
+ray_angle = 12.444444
+ray_angle = 12.500000
+ray_angle = 12.555556
+ray_angle = 12.611111
+ray_angle = 12.666667
+ray_angle = 12.722222
+ray_angle = 12.777778
+ray_angle = 12.833333
+ray_angle = 12.888889
+ray_angle = 12.944444
+ray_angle = 13.000000
+ray_angle = 13.055556
+ray_angle = 13.111111
+ray_angle = 13.166667
+ray_angle = 13.222222
+ray_angle = 13.277778
+ray_angle = 13.333333
+ray_angle = 13.388889
+ray_angle = 13.444444
+ray_angle = 13.500000
+ray_angle = 13.555556
+ray_angle = 13.611111
+ray_angle = 13.666667
+ray_angle = 13.722222
+ray_angle = 13.777778
+ray_angle = 13.833333
+ray_angle = 13.888889
+ray_angle = 13.944444
+ray_angle = 14.000000
+ray_angle = 14.055556
+ray_angle = 14.111111
+ray_angle = 14.166667
+ray_angle = 14.222222
+ray_angle = 14.277778
+ray_angle = 14.333333
+ray_angle = 14.388889
+ray_angle = 14.444444
+ray_angle = 14.500000
+ray_angle = 14.555556
+ray_angle = 14.611111
+ray_angle = 14.666667
+ray_angle = 14.722222
+ray_angle = 14.777778
+ray_angle = 14.833333
+ray_angle = 14.888889
+ray_angle = 14.944444
+ray_angle = 15.000000
+ray_angle = 15.055556
+ray_angle = 15.111111
+ray_angle = 15.166667
+ray_angle = 15.222222
+ray_angle = 15.277778
+ray_angle = 15.333333
+ray_angle = 15.388889
+ray_angle = 15.444444
+ray_angle = 15.500000
+ray_angle = 15.555556
+ray_angle = 15.611111
+ray_angle = 15.666667
+ray_angle = 15.722222
+ray_angle = 15.777778
+ray_angle = 15.833333
+ray_angle = 15.888889
+ray_angle = 15.944444
+ray_angle = 16.000000
+ray_angle = 16.055556
+ray_angle = 16.111111
+ray_angle = 16.166667
+ray_angle = 16.222222
+ray_angle = 16.277778
+ray_angle = 16.333333
+ray_angle = 16.388889
+ray_angle = 16.444444
+ray_angle = 16.500000
+ray_angle = 16.555556
+ray_angle = 16.611111
+ray_angle = 16.666667
+ray_angle = 16.722222
+ray_angle = 16.777778
+ray_angle = 16.833333
+ray_angle = 16.888889
+ray_angle = 16.944444
+ray_angle = 17.000000
+ray_angle = 17.055556
+ray_angle = 17.111111
+ray_angle = 17.166667
+ray_angle = 17.222222
+ray_angle = 17.277778
+ray_angle = 17.333333
+ray_angle = 17.388889
+ray_angle = 17.444444
+ray_angle = 17.500000
+ray_angle = 17.555556
+ray_angle = 17.611111
+ray_angle = 17.666667
+ray_angle = 17.722222
+ray_angle = 17.777778
+ray_angle = 17.833333
+ray_angle = 17.888889
+ray_angle = 17.944444
+ray_angle = 18.000000
+ray_angle = 18.055556
+ray_angle = 18.111111
+ray_angle = 18.166667
+ray_angle = 18.222222
+ray_angle = 18.277778
+ray_angle = 18.333333
+ray_angle = 18.388889
+ray_angle = 18.444444
+ray_angle = 18.500000
+ray_angle = 18.555556
+ray_angle = 18.611111
+ray_angle = 18.666667
+ray_angle = 18.722222
+ray_angle = 18.777778
+ray_angle = 18.833333
+ray_angle = 18.888889
+ray_angle = 18.944444
+ray_angle = 19.000000
+ray_angle = 19.055556
+ray_angle = 19.111111
+ray_angle = 19.166667
+ray_angle = 19.222222
+ray_angle = 19.277778
+ray_angle = 19.333333
+ray_angle = 19.388889
+ray_angle = 19.444444
+ray_angle = 19.500000
+ray_angle = 19.555556
+ray_angle = 19.611111
+ray_angle = 19.666667
+ray_angle = 19.722222
+ray_angle = 19.777778
+ray_angle = 19.833333
+ray_angle = 19.888889
+ray_angle = 19.944444
+ray_angle = 20.000000
+ray_angle = 20.055556
+ray_angle = 20.111111
+ray_angle = 20.166667
+ray_angle = 20.222222
+ray_angle = 20.277778
+ray_angle = 20.333333
+ray_angle = 20.388889
+ray_angle = 20.444444
+ray_angle = 20.500000
+ray_angle = 20.555556
+ray_angle = 20.611111
+ray_angle = 20.666667
+ray_angle = 20.722222
+ray_angle = 20.777778
+ray_angle = 20.833333
+ray_angle = 20.888889
+ray_angle = 20.944444
+ray_angle = 21.000000
+ray_angle = 21.055556
+ray_angle = 21.111111
+ray_angle = 21.166667
+ray_angle = 21.222222
+ray_angle = 21.277778
+ray_angle = 21.333333
+ray_angle = 21.388889
+ray_angle = 21.444444
+ray_angle = 21.500000
+ray_angle = 21.555556
+ray_angle = 21.611111
+ray_angle = 21.666667
+ray_angle = 21.722222
+ray_angle = 21.777778
+ray_angle = 21.833333
+ray_angle = 21.888889
+ray_angle = 21.944444
+ray_angle = 22.000000
+ray_angle = 22.055556
+ray_angle = 22.111111
+ray_angle = 22.166667
+ray_angle = 22.222222
+ray_angle = 22.277778
+ray_angle = 22.333333
+ray_angle = 22.388889
+ray_angle = 22.444444
+ray_angle = 22.500000
+ray_angle = 22.555556
+ray_angle = 22.611111
+ray_angle = 22.666667
+ray_angle = 22.722222
+ray_angle = 22.777778
+ray_angle = 22.833333
+ray_angle = 22.888889
+ray_angle = 22.944444
+ray_angle = 23.000000
+ray_angle = 23.055556
+ray_angle = 23.111111
+ray_angle = 23.166667
+ray_angle = 23.222222
+ray_angle = 23.277778
+ray_angle = 23.333333
+ray_angle = 23.388889
+ray_angle = 23.444444
+ray_angle = 23.500000
+ray_angle = 23.555556
+ray_angle = 23.611111
+ray_angle = 23.666667
+ray_angle = 23.722222
+ray_angle = 23.777778
+ray_angle = 23.833333
+ray_angle = 23.888889
+ray_angle = 23.944444
+ray_angle = 24.000000
+ray_angle = 24.055556
+ray_angle = 24.111111
+ray_angle = 24.166667
+ray_angle = 24.222222
+ray_angle = 24.277778
+ray_angle = 24.333333
+ray_angle = 24.388889
+ray_angle = 24.444444
+ray_angle = 24.500000
+ray_angle = 24.555556
+ray_angle = 24.611111
+ray_angle = 24.666667
+ray_angle = 24.722222
+ray_angle = 24.777778
+ray_angle = 24.833333
+ray_angle = 24.888889
+ray_angle = 24.944444
+ray_angle = 25.000000
+ray_angle = 25.055556
+ray_angle = 25.111111
+ray_angle = 25.166667
+ray_angle = 25.222222
+ray_angle = 25.277778
+ray_angle = 25.333333
+ray_angle = 25.388889
+ray_angle = 25.444444
+ray_angle = 25.500000
+ray_angle = 25.555556
+ray_angle = 25.611111
+ray_angle = 25.666667
+ray_angle = 25.722222
+ray_angle = 25.777778
+ray_angle = 25.833333
+ray_angle = 25.888889
+ray_angle = 25.944444
+ray_angle = 26.000000
+ray_angle = 26.055556
+ray_angle = 26.111111
+ray_angle = 26.166667
+ray_angle = 26.222222
+ray_angle = 26.277778
+ray_angle = 26.333333
+ray_angle = 26.388889
+ray_angle = 26.444444
+ray_angle = 26.500000
+ray_angle = 26.555556
+ray_angle = 26.611111
+ray_angle = 26.666667
+ray_angle = 26.722222
+ray_angle = 26.777778
+ray_angle = 26.833333
+ray_angle = 26.888889
+ray_angle = 26.944444
+ray_angle = 27.000000
+ray_angle = 27.055556
+ray_angle = 27.111111
+ray_angle = 27.166667
+ray_angle = 27.222222
+ray_angle = 27.277778
+ray_angle = 27.333333
+ray_angle = 27.388889
+ray_angle = 27.444444
+ray_angle = 27.500000
+ray_angle = 27.555556
+ray_angle = 27.611111
+ray_angle = 27.666667
+ray_angle = 27.722222
+ray_angle = 27.777778
+ray_angle = 27.833333
+ray_angle = 27.888889
+ray_angle = 27.944444
+ray_angle = 28.000000
+ray_angle = 28.055556
+ray_angle = 28.111111
+ray_angle = 28.166667
+ray_angle = 28.222222
+ray_angle = 28.277778
+ray_angle = 28.333333
+ray_angle = 28.388889
+ray_angle = 28.444444
+ray_angle = 28.500000
+ray_angle = 28.555556
+ray_angle = 28.611111
+ray_angle = 28.666667
+ray_angle = 28.722222
+ray_angle = 28.777778
+ray_angle = 28.833333
+ray_angle = 28.888889
+ray_angle = 28.944444
+ray_angle = 29.000000
+ray_angle = 29.055556
+ray_angle = 29.111111
+ray_angle = 29.166667
+ray_angle = 29.222222
+ray_angle = 29.277778
+ray_angle = 29.333333
+ray_angle = 29.388889
+ray_angle = 29.444444
+ray_angle = 29.500000
+ray_angle = 29.555556
+ray_angle = 29.611111
+ray_angle = 29.666667
+ray_angle = 29.722222
+ray_angle = 29.777778
+ray_angle = 29.833333
+ray_angle = 29.888889
+ray_angle = 29.944444

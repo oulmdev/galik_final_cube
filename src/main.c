@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:25:43 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/06 21:51:34 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 00:17:20 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,9 @@ int	main(int ac, char *av[])
 	ft_memset(&stock, 0, sizeof(t_stock));
 	if (!parsing(av[1], &stock))
 		return (free_stock(&stock), 1);
-	
+
 	if (!start_the_game(&stock))
 		return (false);
-	return (free_stock(&stock), 0);
+	return (0);
+	// return (free_stock(&stock), 0);
 }

@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/09 23:05:38 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/12 23:41:58 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,11 @@
 # define WALL_STRIP_WITH 1 // this is the size of the rectangle.
 # define MINI_MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
 # define MINI_MAP_SIZE 3
-# define SPEED 5
+# define SPEED 7
 # define TURNSPEED 2
 # define WIDTH 1080
 # define HIGTH 768
 
-# define WALL_STRIP_WIDTH 1
-# define NUM_RAYS WIDTH / WALL_STRIP_WIDTH
 
 /*        Will be removed: to make the work easy        */
 
@@ -84,7 +82,7 @@ typedef struct	s_img {
 # define ERROR_CLOSED_MAP "Error\nThe map is not closed by walls.\n"
 
 
-typedef struct s_pars{
+typedef struct s_tools{
 	int			i;
 	int			j;
 	int			k;
@@ -102,7 +100,12 @@ typedef struct s_pars{
 	int			x;
 	int			y;
 	int			player;
-}	t_pars;
+	int			ray_index;
+	double		horizontal_distance;
+	double		vertical_distance;
+	double		increment;
+	double		ray_angle;
+}	t_tools;
 
 typedef struct s_player{
 	double		player_pos_x;
@@ -125,6 +128,13 @@ typedef struct s_texture{
 	int			width;
 	int			height;
 }	t_texture;
+
+typedef struct s_wall
+{
+	int			x;
+	int			y;
+}	t_wall;
+
 
 typedef struct s_ray{
 	double		ray_angle;
@@ -161,6 +171,7 @@ typedef struct s_stock{
 	char		**ex_map;
 	int			c[3];
 	int			f[3];
+	t_wall		*wall;
 	t_ray		**rays;
 	t_player	*player;
 	t_img		*img;
@@ -180,8 +191,8 @@ char	*get_next_line(int fd);
 
 /*-------------------- start of parsing functions ----------------------*/
 
-bool	ceiling_and_floor(char **line, t_pars *pars, t_stock *stock);
-bool	handle_texture(char **str, t_pars *pars, t_stock *stock);
+bool	ceiling_and_floor(char **line, t_tools *pars, t_stock *stock);
+bool	handle_texture(char **str, t_tools *pars, t_stock *stock);
 char	**realloc_map(char **tab, int y, int x);
 bool	parsing(char *path, t_stock *stock);
 char	*ft_strrchr(const char *s, int c);
@@ -210,10 +221,24 @@ int		is_digit(char c);
 /*--------------------- end or libft functions -------------------------*/
 
 double	to_radians(double angle);
-
+bool	set_textures(t_stock *stock);
 bool	start_the_game(t_stock *stock);
 int		key_release(int key, t_stock *stock);
 int		key_press(int key, t_stock *stock);
 int		update(t_stock *stock);
 void	my_mlx_pixel_put(t_img *img, int x, int y, int color);
+bool	set_player(t_stock *stock);
+bool	set_mlx(t_stock *stock);
+double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index);
+double	get_vertical_distance(t_stock *stock, double ray_angle, int ray_index);
+void	ray_casting(t_stock *stock);
+double	normalize_angle(double angle);
+void	draw_3d_projection(t_stock *stock);
+double	distance(double x1, double y1, double x2, double y2);
+void	dda_line(t_stock *stock, int x2, int y2, int color);
+void	move_the_player(t_stock *stock);
+void	rotate_the_player(t_stock *stock);
+void	draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color);
+void	draw_floor_and_ceiling(t_stock *stock);
+
 #endif

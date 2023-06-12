@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:19:26 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/03 22:00:44 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/12 20:23:10 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ bool	map_checker(char **tab, t_stock *stock)
 	return (stock->ex_map = new_tab, true);
 }
 
-bool	texture_checker(t_pars *pars, t_stock *stock)
+bool	texture_checker(t_tools *pars, t_stock *stock)
 {
 	char	**line;
 
@@ -122,7 +122,7 @@ bool	map_new_lines(char *path)
 
 bool	parsing(char *path, t_stock *stock)
 {
-	t_pars	pars;
+	t_tools	pars;
 
 	ft_memset(&pars, 0, sizeof (pars));
 	if (check_path(path) == false)

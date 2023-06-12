@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   degreesToRadians.c                                 :+:      :+:    :+:   */
+/*   rotateThePlayer.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/03 19:50:25 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 20:38:15 by moulmoud         ###   ########.fr       */
+/*   Created: 2023/06/12 22:11:06 by moulmoud          #+#    #+#             */
+/*   Updated: 2023/06/12 22:11:09 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "cube3d.h"
 
-double	to_radians(double angle)
+void	rotate_the_player(t_stock *stock)
 {
-	return (angle * M_PI / (double)180);
+	double	new_player_direction;
+	
+	new_player_direction = stock->player->player_direction 
+		+ (stock->player->turn_direction * stock->player->rotate_speed);
+	stock->player->player_direction = normalize_angle(new_player_direction);
 }
