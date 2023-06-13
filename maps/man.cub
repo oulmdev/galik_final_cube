@@ -2,9 +2,9 @@ C 104,17,17
 
 F 84,84,84
 
-SO ./textures/grass_block_side.xpm
-EA ./textures/grass_block_side.xpm
-WE ./textures/grass_block_side.xpm
+SO ./textures/bricks.xpm
+EA ./textures/bricks.xpm
+WE ./textures/bricks.xpm
 NO ./textures/bricks.xpm
 
 111111111111111

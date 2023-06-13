@@ -6,14 +6,27 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:31:20 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 20:43:16 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 15:02:57 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "cube3d.h"
 
-
-
+/*****************************************************************************
+ * 						CAST HORIZONTAL RAYS FUNCTION
+ * 		cast_horizontal_rays: cast the horizontal rays.
+ * 		HOW IT WORKS:
+ * 		1)	We calculate the first horizontal intersection.
+ * 		2)	We calculate the horizontal step and the vertical step.
+ * 		3)	We calculate the next horizontal touch x and y.
+ * 		NOTE: the ray_angle is the angle of the player + the angle of the ray
+ * 		we are casting it works because the tan of the angle of the ray is the
+ * 		slope of the ray, and the slope of the ray is the same as the slope of
+ * 		the line that goes from the player to the intersection point.
+ * 
+ * 
+ * 		
+*****************************************************************************/
 double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 {
 	double	yintercept_hori;
@@ -27,8 +40,6 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 	if (stock->rays[ray_index]->is_ray_facing_down)
 		yintercept_hori += MINI_MAP_BOX_ZIZE;
 	xintercept_hori = stock->player->player_pos_x + (yintercept_hori - stock->player->player_pos_y) / tan(to_radians(ray_angle));
-
-
 	ystep = MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_up)
 		ystep *= -1;

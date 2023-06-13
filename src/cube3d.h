@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 23:41:58 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 11:47:17 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,8 @@
 
 
 
-# define FOV 60 // field of view
-# define WALL_STRIP_WITH 1 // this is the size of the rectangle.
-# define MINI_MAP_BOX_ZIZE 64 // you can change this to what ever you want to controle the size of the mini map.
-# define MINI_MAP_SIZE 3
+# define FOV 60
+# define MINI_MAP_BOX_ZIZE 64
 # define SPEED 7
 # define TURNSPEED 2
 # define WIDTH 1080
@@ -51,7 +49,6 @@
 
 
 /*        Will be removed: to make the work easy        */
-
 # define RED 0x00FF0000
 # define GREEN 0x0000FF00
 # define BLUE 0x000000FF
@@ -61,7 +58,6 @@
 # define CYAN 0x0000FFFF
 # define GREY 0x00A9A9A9
 # define BROWN 0x00A52A2A
-
 /*                         ENd                          */
 
 
@@ -111,9 +107,9 @@ typedef struct s_player{
 	double		player_pos_x;
 	double		player_pos_y;
 	double		player_direction;
-	int			turn_direction;// 0; idle -1: turn left 1: turn right.
-	int			walk_direction;// 0 : is not walking 1: walking right -1: walking left.
-	int 		sideways;// 0: not walking sideways 1: walking right -1: walking left.
+	int			turn_direction;
+	int			walk_direction;
+	int 		sideways;
 	double		rotate_speed;
 	double		walk_speed;
 
@@ -129,13 +125,6 @@ typedef struct s_texture{
 	int			height;
 }	t_texture;
 
-typedef struct s_wall
-{
-	int			x;
-	int			y;
-}	t_wall;
-
-
 typedef struct s_ray{
 	double		ray_angle;
 	double		horizontal_wall_hit_x;
@@ -144,13 +133,13 @@ typedef struct s_ray{
 	double		vertical_wall_hit_y;
 	double		distance;
 	double		projection_distance;
-	int			was_hit_vertical; // 0: not hit 1: hit
-	int			is_ray_facing_up; // 0: not facing up 1: facing up
-	int			is_ray_facing_down; // 0: not facing down 1: facing down
-	int			is_ray_facing_right; // 0: not facing right 1: facing right
-	int			is_ray_facing_left; // 0: not facing left 1: facing left
-	char		wall_hit_content; // this is for the bonus part if we get to it.
-	int			was_hit_horizontal; // 0: not hit 1: hit
+	int			was_hit_vertical;
+	int			is_ray_facing_up;
+	int			is_ray_facing_down;
+	int			is_ray_facing_right;
+	int			is_ray_facing_left;
+	char		wall_hit_content;
+	int			was_hit_horizontal;
 	double		horizontal_wall_hit_distance;
 	double		vertical_wall_hit_distance;
 }	t_ray;
@@ -171,7 +160,6 @@ typedef struct s_stock{
 	char		**ex_map;
 	int			c[3];
 	int			f[3];
-	t_wall		*wall;
 	t_ray		**rays;
 	t_player	*player;
 	t_img		*img;

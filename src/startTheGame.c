@@ -6,11 +6,11 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 21:45:34 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 22:23:37 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 12:01:17 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "cube3d.h"
+#	include "cube3d.h"
 
 int	exit_the_game(int key, t_stock *stock)
 {
@@ -34,5 +34,5 @@ bool	start_the_game(t_stock *stock)
 	mlx_put_image_to_window(stock->mlx_ptr, stock->win_ptr,
 		stock->img->img, 0, 0);
 	mlx_loop(stock->mlx_ptr);
-	return true;
+	return (true);
 }

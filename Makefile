@@ -6,7 +6,7 @@
 #    By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/15 01:44:53 by moulmoud          #+#    #+#              #
-#    Updated: 2023/06/13 00:03:13 by moulmoud         ###   ########.fr        #
+#    Updated: 2023/06/13 13:07:55 by moulmoud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,10 +31,10 @@ $(OBJDIR):
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(MLX) $(OBJ) -o $(NAME)
-	@clear
+	# @clear
 $(OBJDIR)%.o: $(SRCDIR)%.c src/cube3d.h
 	$(CC) $(CFLAGS) -c $< -o $@
-	@clear
+	# @clear
 
 clean:
 	rm -rf $(OBJDIR)

@@ -1,7 +1,7 @@
 /* XPM */
 static char *bricks1686578736[] = {
 /* columns rows colors chars-per-pixel */
-"64 64 9 1 ",
+"600 64 9 1 ",
 "  c #C66851",
 ". c #B1624D",
 "X c #9B5643",

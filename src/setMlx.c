@@ -6,12 +6,17 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:19:02 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 20:19:05 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 11:54:03 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cube3d.h"
 
+/*****************************************************************************
+**		allocate_ray: allocate the rays structs
+		WHY: we need to allocate the rays structs to be able to use them
+		when we will cast the rays and when we will draw the walls.
+*****************************************************************************/
 bool	allocate_ray(t_stock *stock)
 {
 	int	number_of_rays;
