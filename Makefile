@@ -6,15 +6,14 @@
 #    By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/15 01:44:53 by moulmoud          #+#    #+#              #
-#    Updated: 2023/06/13 13:07:55 by moulmoud         ###   ########.fr        #
+#    Updated: 2023/06/13 15:56:05 by moulmoud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = cub3D
 
 CC = cc
-CFLAGS = #-Wall -Wextra -Werror #-fsanitize=address
-
+CFLAGS = -ofast -o3
 OBJDIR = obj/
 SRCDIR = src/
 

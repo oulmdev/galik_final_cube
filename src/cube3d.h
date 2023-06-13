@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 11:47:17 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 16:09:37 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,10 @@
 
 # define FOV 60
 # define MINI_MAP_BOX_ZIZE 64
-# define SPEED 7
+# define SPEED 10
 # define TURNSPEED 2
-# define WIDTH 1080
-# define HIGTH 768
+# define WIDTH 1280
+# define HIGTH 1024
 
 
 /*        Will be removed: to make the work easy        */
@@ -228,5 +228,6 @@ void	move_the_player(t_stock *stock);
 void	rotate_the_player(t_stock *stock);
 void	draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color);
 void	draw_floor_and_ceiling(t_stock *stock);
+void	draw_mini_map(t_stock *stock);
 
 #endif

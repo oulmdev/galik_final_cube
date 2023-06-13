@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 11:34:46 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 11:35:20 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/13 16:02:01 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	draw_every_thing(t_stock *stock)
 {
 	draw_floor_and_ceiling(stock);
 	ray_casting(stock);
+	draw_mini_map(stock);
 }
 
 /* ***************************************************************************
