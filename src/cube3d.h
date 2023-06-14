@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 16:09:37 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/14 14:01:33 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@
 # define FOV 60
 # define MINI_MAP_BOX_ZIZE 64
 # define SPEED 10
-# define TURNSPEED 2
+# define TURNSPEED 3
 # define WIDTH 1280
 # define HIGTH 1024
 

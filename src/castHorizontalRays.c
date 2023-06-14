@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:31:20 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 15:02:57 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/14 13:50:32 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@
  * 		we are casting it works because the tan of the angle of the ray is the
  * 		slope of the ray, and the slope of the ray is the same as the slope of
  * 		the line that goes from the player to the intersection point.
- * 
- * 
- * 		
 *****************************************************************************/
 double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 {

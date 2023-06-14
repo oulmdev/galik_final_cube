@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 16:02:16 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 22:43:52 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/14 14:16:02 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ void	draw_background(t_stock *stock)
 		while (j < WIDTH / 4)
 		{
 			my_mlx_pixel_put(stock->img, j, i, WHITE);
-			if (i % MINI_MAP_BOX_ZIZE == 0 || j % MINI_MAP_BOX_ZIZE == 0)
-				my_mlx_pixel_put(stock->img, j, i, BLACK);
 			j++;
 		}
 		my_mlx_pixel_put(stock->img, 0, i, BLACK);
@@ -68,13 +66,40 @@ void	draw_profile_mini_map(t_stock *stock)
 	int	y;
 	int	max_x;
 	int	max_y;
-
-	max_x;
-	max_y;
-	while ()
+	int area;
+	
+	area = ((MINI_MAP_BOX_ZIZE / 2) + (2 * MINI_MAP_BOX_ZIZE));
+	max_x = stock->player->player_pos_x + area; // the max_x to search for the player.
+	if (max_x > (stock->map_width * MINI_MAP_BOX_ZIZE))
+		max_x = (stock->map_width * MINI_MAP_BOX_ZIZE);
+	max_y = stock->player->player_pos_y + area; // the max_y to search for the player.
+	if (max_y > (stock->map_height * MINI_MAP_BOX_ZIZE))
+		max_y = (stock->map_height * MINI_MAP_BOX_ZIZE);
+	
+	y = stock->player->player_pos_y - area;
+	if (y < 0)
+		y = 0;
+		
+	int i = 0;
+	int j = 0;
+	while (y < max_y)
 	{
-
+		x = stock->player->player_pos_x - area;
+		if (x < 0)
+			x = 0;
+		j = 0;
+		while (x < max_x)
+		{
+			if (stock->ex_map[y / MINI_MAP_BOX_ZIZE][x / MINI_MAP_BOX_ZIZE] == '1')
+				my_mlx_pixel_put(stock->img, j, i, GREEN);
+			x++;
+			j++;
+		}
+		i++;
+		y++;
 	}
+	
+	
 }
 
 void	draw_mini_map(t_stock *stock)
