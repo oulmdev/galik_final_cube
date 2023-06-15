@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/14 14:01:33 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/15 17:00:13 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@
 # define FOV 60
 # define MINI_MAP_BOX_ZIZE 64
 # define SPEED 10
-# define TURNSPEED 3
+# define TURNSPEED 2
 # define WIDTH 1280
 # define HIGTH 1024
 
@@ -155,6 +155,7 @@ typedef struct s_stock{
 	int			window_height;
 	int			map_width;
 	int			map_height;
+	int			do_direction_mini_map;
 	double		fov;
 	double		mini_map_size_box;
 	char		**ex_map;
@@ -164,6 +165,7 @@ typedef struct s_stock{
 	t_player	*player;
 	t_img		*img;
 	t_texture	**texture;
+	t_texture	**mini_map;
 	double		angle;
 	int			drawer_x;
 }	t_stock;
@@ -223,7 +225,7 @@ void	ray_casting(t_stock *stock);
 double	normalize_angle(double angle);
 void	draw_3d_projection(t_stock *stock);
 double	distance(double x1, double y1, double x2, double y2);
-void	dda_line(t_stock *stock, int x2, int y2, int color);
+void	dda_line(t_stock *stock , double x2, double y2, int color);
 void	move_the_player(t_stock *stock);
 void	rotate_the_player(t_stock *stock);
 void	draw_circle(t_stock *stock, int x_x, int y_y, int wall, int color);
