@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:16:14 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 15:19:09 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/16 18:45:12 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ bool	set_north_texture(t_stock *stock)
 			&stock->texture[0]->endian);
 	if (!stock->texture[0]->addr)
 		return (print("Error\nFailed to load `NO' texture\n", 2), false);
-	if (stock->texture[0]->height != MINI_MAP_BOX_ZIZE 
-		|| stock->texture[0]->width != MINI_MAP_BOX_ZIZE)
-		return (print("Error\n`EA' texture must be 64x64\n", 2), false);
+	// if (stock->texture[0]->height != MINI_MAP_BOX_ZIZE 
+		// || stock->texture[0]->width != MINI_MAP_BOX_ZIZE)
+		// return (print("Error\n`EA' texture must be 64x64\n", 2), false);
 	return (true);
 }
 
@@ -52,9 +52,9 @@ bool	set_south_texture(t_stock *stock)
 			&stock->texture[2]->endian);
 	if (!stock->texture[2]->addr)
 		return (print("Error\nFailed to load `NO' texture\n", 2), false);
-	if (stock->texture[2]->height != MINI_MAP_BOX_ZIZE 
-		|| stock->texture[2]->width != MINI_MAP_BOX_ZIZE)
-		return (print("Error\n`SO' texture must be 64x64\n", 2), false);
+	// if (stock->texture[2]->height != MINI_MAP_BOX_ZIZE 
+		// || stock->texture[2]->width != MINI_MAP_BOX_ZIZE)
+		// return (print("Error\n`SO' texture must be 64x64\n", 2), false);
 	return (true);
 }
 
@@ -75,9 +75,9 @@ bool	set_west_texture(t_stock *stock)
 			&stock->texture[1]->endian);
 	if (!stock->texture[1]->addr)
 		return (print("Error\nFailed to load `NO' texture\n", 2), false);
-	if (stock->texture[1]->height != MINI_MAP_BOX_ZIZE 
-		|| stock->texture[1]->width != MINI_MAP_BOX_ZIZE)
-		return (print("Error\n`WE' texture must be 64x64\n", 2), false);
+	// if (stock->texture[1]->height != MINI_MAP_BOX_ZIZE 
+	// 	|| stock->texture[1]->width != MINI_MAP_BOX_ZIZE)
+	// 	return (print("Error\n`WE' texture must be 64x64\n", 2), false);
 	return (true);
 }
 
@@ -98,9 +98,9 @@ bool	set_east_texture(t_stock *stock)
 			&stock->texture[3]->endian);
 	if (!stock->texture[3]->addr)
 		return (print("Error\nFailed to load `NO' texture\n", 2), false);
-	if (stock->texture[3]->height != MINI_MAP_BOX_ZIZE 
-		|| stock->texture[3]->width != MINI_MAP_BOX_ZIZE)
-		return (print("Error\n`EA' texture must be 64x64\n", 2), false);
+	// if (stock->texture[3]->height != MINI_MAP_BOX_ZIZE 
+	// 	|| stock->texture[3]->width != MINI_MAP_BOX_ZIZE)
+	// 	return (print("Error\n`EA' texture must be 64x64\n", 2), false);
 	return (true);
 }
 

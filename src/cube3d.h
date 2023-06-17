@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 16:18:28 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/15 17:00:13 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:48:50 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,13 @@
 # define S_KEY 1
 # define A_KEY 0
 # define D_KEY 2
-
+# define M_KEY 46
+# define R_KEY 15
 
 
 # define FOV 60
 # define MINI_MAP_BOX_ZIZE 64
-# define SPEED 10
+# define SPEED 4
 # define TURNSPEED 2
 # define WIDTH 1280
 # define HIGTH 1024
@@ -166,8 +167,11 @@ typedef struct s_stock{
 	t_img		*img;
 	t_texture	**texture;
 	t_texture	**mini_map;
+	t_texture	**icon_speed;
 	double		angle;
 	int			drawer_x;
+	int			draw_the_map;
+	int			mouse_rotation;
 }	t_stock;
 
 

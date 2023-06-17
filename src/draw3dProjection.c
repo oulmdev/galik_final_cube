@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:36:59 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 15:11:01 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/16 19:36:29 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int	get_xpm_color(t_texture *texture, int offset_x,
 void	find_texture_and_offset(t_stock *stock, int *texture_index,
 	int *texture_offset_x, int i)
 {
+	int tmp;
 	if (stock->rays[i]->was_hit_horizontal
 			&& stock->rays[i]->is_ray_facing_down)
 		*texture_index = 0;
@@ -61,11 +62,20 @@ void	find_texture_and_offset(t_stock *stock, int *texture_index,
 			&& stock->rays[i]->is_ray_facing_right)
 		*texture_index = 3;
 	if (stock->rays[i]->was_hit_vertical)
+	{
 		*texture_offset_x = (int)stock->rays[i]->vertical_wall_hit_y
-			% MINI_MAP_BOX_ZIZE; 
+			% MINI_MAP_BOX_ZIZE;
+		tmp = *texture_offset_x;
+		*texture_offset_x = (tmp * stock->texture[*texture_index]->width) / MINI_MAP_BOX_ZIZE;
+	}
 	else if (stock->rays[i]->was_hit_horizontal)
+	{
+
 		*texture_offset_x = (int)stock->rays[i]->horizontal_wall_hit_x
 			% MINI_MAP_BOX_ZIZE;
+		tmp = *texture_offset_x;
+		*texture_offset_x = (tmp * stock->texture[*texture_index]->width) / MINI_MAP_BOX_ZIZE;
+	}
 }
 
 /*****************************************************************************
@@ -85,6 +95,7 @@ void	draw_3d_projection(t_stock *stock)
 	texture_offset_x = 0;
 	texture_offset_y = 0;
 	i = 0;
+	int tmp;
 	while  (i < WIDTH)
 	{
 		find_texture_and_offset(stock, &texture_index, &texture_offset_x, i);
@@ -93,25 +104,19 @@ void	draw_3d_projection(t_stock *stock)
 			j = 0;
 		else
 			j = (HIGTH / 2) - (stock->rays[i]->projection_distance / 2);
-		while (j < (HIGTH / 2) + (stock->rays[i]->projection_distance / 2))
+		while (j < (HIGTH / 2) + (stock->rays[i]->projection_distance / 2) && j < HIGTH)
 		{
 			texture_offset_y = (j + (stock->rays[i]->projection_distance / 2) 
 				- (HIGTH / 2)) * (stock->texture[texture_index]->height
 				/ stock->rays[i]->projection_distance);
+			// tmp = texture_offset_y;
+			// texture_offset_y = (tmp * stock->texture[texture_index]->height)
+			// 	/ MINI_MAP_BOX_ZIZE;
 			if (texture_offset_y < 0)
 				texture_offset_y *= -1;
-			if (stock->rays[i]->was_hit_vertical)
-			{
-				color = get_xpm_color(stock->texture[texture_index],
-					texture_offset_x, texture_offset_y);
-				my_mlx_pixel_put(stock->img, i, j, color);
-			}
-			else if (stock->rays[i]->was_hit_horizontal)
-			{
-				color = get_xpm_color(stock->texture[texture_index],
-					texture_offset_x, texture_offset_y);
-				my_mlx_pixel_put(stock->img, i, j, color);
-			}
+			color = get_xpm_color(stock->texture[texture_index],
+				texture_offset_x, texture_offset_y);
+			my_mlx_pixel_put(stock->img, i, j, color);
 			j++;
 		}
 		i++;

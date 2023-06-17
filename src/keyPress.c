@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 22:03:40 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/15 17:01:44 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/17 01:14:35 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,10 @@ int	key_press(int key, t_stock *stock)
 		stock->player->sideways = 1;
 	if (key == A_KEY)
 		stock->player->sideways = -1;
+	if (key == M_KEY)
+		stock->mouse_rotation = 0;
+	if (key == R_KEY)
+		stock->mouse_rotation = 1;
 	stock->player->rotate_speed = TURNSPEED;
 	if (key == ESC_KEY)
 		exit(1);

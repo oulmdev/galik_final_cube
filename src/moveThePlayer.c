@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 22:10:09 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/13 15:49:47 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/17 01:00:26 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,4 +75,5 @@ void	move_the_player(t_stock *stock)
 		stock->player->player_pos_x = new_player_x;
 		stock->player->player_pos_y = new_player_y;
 	}
+	stock->draw_the_map = 0;
 }

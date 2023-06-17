@@ -2,9 +2,9 @@ C 104,17,17
 
 F 84,84,84
 
-SO ./textures/bricks.xpm
-EA ./textures/crimson_nylium_side.xpm
-WE ./textures/stone_bricks.xpm
+SO ./textures/stone_bricks.xpm
+EA ./textures/grass_block_side.xpm
+WE ./textures/red_nether_bricks.xpm
 NO ./textures/grass_block_side.xpm
 
 111111111111111
