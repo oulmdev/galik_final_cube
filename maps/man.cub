@@ -2,13 +2,13 @@ C 104,17,17
 
 F 84,84,84
 
-SO ./textures/stone_bricks.xpm
-EA ./textures/grass_block_side.xpm
-WE ./textures/red_nether_bricks.xpm
-NO ./textures/grass_block_side.xpm
+SO ./textures/tile198.xpm
+EA ./textures/tile214.xpm
+WE ./textures/tile174.xpm
+NO ./textures/tile250.xpm
 
 111111111111111
-100000100000001
+10N000100000001
 1000011111111111111111111
 10000011000000000000010001
 10000010000000000000000001
@@ -33,7 +33,7 @@ NO ./textures/grass_block_side.xpm
               1000000000000000000010001
               1111111111111111111110001
                                   10001
-                               11110E01111
+                               11110001111
                                10000000001
    1111111111111               10000000001
    1000000000001               10000000001

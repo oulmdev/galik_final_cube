@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 21:45:34 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/17 04:16:15 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/17 16:07:11 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,28 +36,17 @@ int	mouse_move(int x, int y, t_stock *stock)
 int mouse_press(int button, int x, int y, t_stock *stock)
 {
 	if (button == 1 && x < (WIDTH / 4) && y < (WIDTH / 4))
-	{
 		stock->draw_the_map = 1;
-	}
 	else
 		stock->draw_the_map = 0;
 	if (button == 1 && x > (WIDTH / 4) && x < ((WIDTH / 4) + 68) && y < 64 && stock->mouse_rotation)
-	{
 		stock->mouse_rotation = 0;
-	}
 	else if (button == 1 && x > (WIDTH / 4) && x < ((WIDTH / 4) + 68) && y < 64 && !stock->mouse_rotation)
-	{
 		stock->mouse_rotation = 1;
-	}
-	
-	if (button == 1 && x > (WIDTH / 4) && x < ((WIDTH / 4) + 68) && y > 64 && y < 128 && stock->player->walk_speed < 15)
-	{
-		stock->player->walk_speed += 1;
-	}
-	else if (button == 1 && x > (WIDTH / 4) && x < ((WIDTH / 4) + 68) && y > 64 && y < 128 && stock->player->walk_speed >= 15)
-	{
-		stock->player->walk_speed = 5;
-	}
+	if (button == 1 && x > (WIDTH / 4) && x < ((WIDTH / 4) + 34) && y > 64 && y < 96 && stock->player->walk_speed > 2)
+		stock->player->walk_speed -= 2;
+	if (button == 1 && x > (WIDTH / 4 + 128) && x < ((WIDTH / 4) + 164) && y > 64 && y < 96 && stock->player->walk_speed <= 15)
+		stock->player->walk_speed += 2;
 	
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 16:02:16 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/17 04:14:18 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/19 17:02:26 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,8 +120,8 @@ void	draw_profile_mini_map(t_stock *stock)
 		{
 			if (stock->ex_map[y / MINI_MAP_BOX_ZIZE][x / MINI_MAP_BOX_ZIZE] == '1')
 				my_mlx_pixel_put(stock->img, j, i, BLACK);
-			if (stock->ex_map[y / MINI_MAP_BOX_ZIZE][x / MINI_MAP_BOX_ZIZE] == '0')
-				my_mlx_pixel_put(stock->img, j, i, WHITE);
+			// if (stock->ex_map[y / MINI_MAP_BOX_ZIZE][x / MINI_MAP_BOX_ZIZE] == '0')
+			// 	my_mlx_pixel_put(stock->img, j, i, WHITE);
 			x++;
 			j++;
 		}
@@ -163,188 +163,147 @@ void	draw_border(t_stock *stock)
 	
 }
 
-void	draw_directions_mini_map(t_stock *stock)
-{
-	if (!stock->do_direction_mini_map)
-		return ;
-	draw_border(stock);
-}
 
-void	draw_directions(t_stock *stock)
-{
-	stock->do_direction_mini_map = 0;
-	stock->mini_map = malloc(sizeof(t_texture *) * 5);
-	if (!stock->mini_map)
-		return ;
-	stock->mini_map[0] = malloc(sizeof(t_texture));
-	stock->mini_map[0]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/n.xpm", &(stock->mini_map[0]->width),
-			&(stock->mini_map[0]->height));
-	if (!stock->mini_map[0]->img)
-		return ;
-	stock->mini_map[0]->addr = mlx_get_data_addr(stock->mini_map[0]->img,
-			&stock->mini_map[0]->bits_per_pixel, &stock->mini_map[0]->line_length,
-			&stock->mini_map[0]->endian);
-	if (!stock->mini_map[0]->addr)
-		return ;
-	stock->mini_map[1] = malloc(sizeof(t_texture));
-	stock->mini_map[1]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/s.xpm", &(stock->mini_map[1]->width),
-			&(stock->mini_map[1]->height));
-	if (!stock->mini_map[1]->img)
-		return ;
-	stock->mini_map[1]->addr = mlx_get_data_addr(stock->mini_map[1]->img,
-			&stock->mini_map[1]->bits_per_pixel, &stock->mini_map[1]->line_length,
-			&stock->mini_map[1]->endian);
-	if (!stock->mini_map[1]->addr)
-		return ;
-	stock->mini_map[2] = malloc(sizeof(t_texture));
-	stock->mini_map[2]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/e.xpm", &(stock->mini_map[2]->width),
-			&(stock->mini_map[2]->height));
-	if (!stock->mini_map[2]->img)
-		return ;
-	stock->mini_map[2]->addr = mlx_get_data_addr(stock->mini_map[2]->img,
-			&stock->mini_map[2]->bits_per_pixel, &stock->mini_map[2]->line_length,
-			&stock->mini_map[2]->endian);
-	if (!stock->mini_map[2]->addr)
-		return ;
-	stock->mini_map[3] = malloc(sizeof(t_texture));
-	stock->mini_map[3]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/w.xpm", &(stock->mini_map[3]->width),
-			&(stock->mini_map[3]->height));
-	if (!stock->mini_map[3]->img)
-		return ;
-	stock->mini_map[3]->addr = mlx_get_data_addr(stock->mini_map[3]->img,
-			&stock->mini_map[3]->bits_per_pixel, &stock->mini_map[3]->line_length,
-			&stock->mini_map[3]->endian);
-	if (!stock->mini_map[3]->addr)
-		return ;
-	stock->do_direction_mini_map = 1;
-	stock->mini_map[4] = NULL;
-	draw_directions_mini_map(stock);
-}
+
+
 
 void	draw_icons(t_stock *stock)
 {
-	stock->icon_speed = malloc(sizeof(t_texture *) * 7);
-	if (!stock->icon_speed)
+	stock->icons = malloc(sizeof(t_texture *) * 5);
+	if (!stock->icons)
 		return ;
 	
-	stock->icon_speed[0] = malloc(sizeof(t_texture));
-	stock->icon_speed[0]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/1.xpm", &(stock->icon_speed[0]->width),
-			&(stock->icon_speed[0]->height));
-	if (!stock->icon_speed[0]->img)
+	stock->icons[0] = malloc(sizeof(t_texture));
+	stock->icons[0]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
+			"./textures/icons/left.xpm", &(stock->icons[0]->width),
+			&(stock->icons[0]->height));
+	if (!stock->icons[0]->img)
 		return ;
-	stock->icon_speed[0]->addr = mlx_get_data_addr(stock->icon_speed[0]->img,
-			&stock->icon_speed[0]->bits_per_pixel, &stock->icon_speed[0]->line_length,
-			&stock->icon_speed[0]->endian);
-	if (!stock->icon_speed[0]->addr)
+	stock->icons[0]->addr = mlx_get_data_addr(stock->icons[0]->img,
+			&stock->icons[0]->bits_per_pixel, &stock->icons[0]->line_length,
+			&stock->icons[0]->endian);
+	if (!stock->icons[0]->addr)
 		return ;
 
-	stock->icon_speed[1] = malloc(sizeof(t_texture));
-	stock->icon_speed[1]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/2.xpm", &(stock->icon_speed[1]->width),
-			&(stock->icon_speed[1]->height));
-	if (!stock->icon_speed[1]->img)
+	stock->icons[1] = malloc(sizeof(t_texture));
+	stock->icons[1]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
+			"./textures/icons/right.xpm", &(stock->icons[1]->width),
+			&(stock->icons[1]->height));
+	if (!stock->icons[1]->img)
 		return ;
-	stock->icon_speed[1]->addr = mlx_get_data_addr(stock->icon_speed[1]->img,
-			&stock->icon_speed[1]->bits_per_pixel, &stock->icon_speed[1]->line_length,
-			&stock->icon_speed[1]->endian);
-	if (!stock->icon_speed[1]->addr)
-		return ;
-	
-	stock->icon_speed[2] = malloc(sizeof(t_texture));
-	stock->icon_speed[2]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/3.xpm", &(stock->icon_speed[2]->width),
-			&(stock->icon_speed[2]->height));
-	if (!stock->icon_speed[2]->img)
-		return ;
-	stock->icon_speed[2]->addr = mlx_get_data_addr(stock->icon_speed[2]->img,
-			&stock->icon_speed[2]->bits_per_pixel, &stock->icon_speed[2]->line_length,
-			&stock->icon_speed[2]->endian);
-	if (!stock->icon_speed[2]->addr)
+	stock->icons[1]->addr = mlx_get_data_addr(stock->icons[1]->img,
+			&stock->icons[1]->bits_per_pixel, &stock->icons[1]->line_length,
+			&stock->icons[1]->endian);
+	if (!stock->icons[1]->addr)
 		return ;
 	
-	stock->icon_speed[3] = malloc(sizeof(t_texture));
-	stock->icon_speed[3]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/4.xpm", &(stock->icon_speed[3]->width),
-			&(stock->icon_speed[3]->height));
-	if (!stock->icon_speed[3]->img)
+	stock->icons[2] = malloc(sizeof(t_texture));
+	stock->icons[2]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
+			"./textures/icons/mouse.xpm", &(stock->icons[2]->width),
+			&(stock->icons[2]->height));
+	if (!stock->icons[2]->img)
 		return ;
-	stock->icon_speed[3]->addr = mlx_get_data_addr(stock->icon_speed[3]->img,
-			&stock->icon_speed[3]->bits_per_pixel, &stock->icon_speed[3]->line_length,
-			&stock->icon_speed[3]->endian);
-	if (!stock->icon_speed[3]->addr)
-		return ;
-	
-	stock->icon_speed[4] = malloc(sizeof(t_texture));
-	stock->icon_speed[4]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/mouse.xpm", &(stock->icon_speed[4]->width),
-			&(stock->icon_speed[4]->height));
-	if (!stock->icon_speed[4]->img)
-		return ;
-	stock->icon_speed[4]->addr = mlx_get_data_addr(stock->icon_speed[4]->img,
-			&stock->icon_speed[4]->bits_per_pixel, &stock->icon_speed[4]->line_length,
-			&stock->icon_speed[4]->endian);
-	if (!stock->icon_speed[4]->addr)
+	stock->icons[2]->addr = mlx_get_data_addr(stock->icons[2]->img,
+			&stock->icons[2]->bits_per_pixel, &stock->icons[2]->line_length,
+			&stock->icons[2]->endian);
+	if (!stock->icons[2]->addr)
 		return ;
 	
-	stock->icon_speed[5] = malloc(sizeof(t_texture));
-	stock->icon_speed[5]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
-			"./textures/speed_icons/speed.xpm", &(stock->icon_speed[5]->width),
-			&(stock->icon_speed[5]->height));
-	if (!stock->icon_speed[5]->img)
+	stock->icons[3] = malloc(sizeof(t_texture));
+	stock->icons[3]->img = mlx_xpm_file_to_image(stock->mlx_ptr,
+			"./textures/player.xpm", &(stock->icons[3]->width),
+			&(stock->icons[3]->height));
+	if (!stock->icons[3]->img)
 		return ;
-	stock->icon_speed[5]->addr = mlx_get_data_addr(stock->icon_speed[5]->img,
-			&stock->icon_speed[5]->bits_per_pixel, &stock->icon_speed[5]->line_length,
-			&stock->icon_speed[5]->endian);
-	if (!stock->icon_speed[5]->addr)
+	stock->icons[3]->addr = mlx_get_data_addr(stock->icons[3]->img,
+			&stock->icons[3]->bits_per_pixel, &stock->icons[3]->line_length,
+			&stock->icons[3]->endian);
+	if (!stock->icons[3]->addr)
 		return ;
 	
-	stock->icon_speed[6] = NULL;
+	
+	stock->icons[4] = NULL;
 
 	
 
 	int y = 0;
 	int x;
 	int color;
-	while (y < (int)stock->icon_speed[4]->height)
+	while (y < (int)stock->icons[2]->height)
 	{
 		x = 0;
-		while (x < (int)stock->icon_speed[4]->width)
+		while (x < (int)stock->icons[2]->width)
 		{
-			color = *(unsigned int *)(stock->icon_speed[4]->addr + (y * stock->icon_speed[4]->line_length + x * (stock->icon_speed[4]->bits_per_pixel / 8)));
-			if (color > 0)
-				my_mlx_pixel_put(stock->img, x + ((WIDTH / 4) + 5), y, color);
+			color = *(unsigned int *)(stock->icons[2]->addr + (y * stock->icons[2]->line_length + x * (stock->icons[2]->bits_per_pixel / 8)));
+			if (color >= 0)
+				my_mlx_pixel_put(stock->img, x + ((WIDTH / 4) + 5), y + 10, color);
 		
 			x++;
 		}
 		y++;
 	}
-	
-	y = 0;
-	
-	while (y < (int)stock->icon_speed[5]->height)
+	y = 0;	
+	while (y < (int)stock->icons[0]->height)
 	{
 		x = 0;
-		while (x < (int)stock->icon_speed[5]->width)
+		while (x < (int)stock->icons[0]->width)
 		{
-			color = *(unsigned int *)(stock->icon_speed[5]->addr + (y * stock->icon_speed[5]->line_length + x * (stock->icon_speed[5]->bits_per_pixel / 8)));
-			if (color > 0)
+			color = *(unsigned int *)(stock->icons[0]->addr + (y * stock->icons[0]->line_length + x * (stock->icons[0]->bits_per_pixel / 8)));
+			
+			if (color >= 0)
 				my_mlx_pixel_put(stock->img, x + ((WIDTH / 4) + 5), y + 65, color);
 			x++;
 		}
 		y++;
 	}
+	y = 0;
+	while (y < (int)stock->icons[1]->height)
+	{
+		x = 0;
+		while (x < (int)stock->icons[1]->width)
+		{
+			color = *(unsigned int *)(stock->icons[1]->addr + (y * stock->icons[1]->line_length + x * (stock->icons[1]->bits_per_pixel / 8)));
+			
+			if (color >= 0)
+				my_mlx_pixel_put(stock->img, x + ((WIDTH / 4) + 128), y + 65, color);
+			x++;
+		}
+		y++;
+	}
+	y = HIGTH / 2 -  64;
+	while (y < (int)stock->icons[3]->height)
+	{
+		x = 0;
+		while (x < (int)stock->icons[3]->width)
+		{
+			color = *(unsigned int *)(stock->icons[3]->addr 
+				+ (y * stock->icons[3]->line_length
+				+ x * (stock->icons[3]->bits_per_pixel / 8)));
+			if (color >= 0)
+				my_mlx_pixel_put(stock->img, x , y , color);
+			x++;
+		}
+		y++;
+	}
+	x = WIDTH / 2 - 10;
+	while (x < WIDTH / 2 + 10)
+	{
+		my_mlx_pixel_put(stock->img, x , (HIGTH / 2) , GREEN);	
+		x++;	
+	}
+	y = HIGTH / 2 -  10;
+	while (y < HIGTH / 2 + 10)
+	{
+		my_mlx_pixel_put(stock->img, (WIDTH / 2) , y , GREEN);	
+		y++;	
+	}
 }
 
 void	draw_mini_map(t_stock *stock)
 {
-	draw_background(stock);
+	// draw_background(stock);
 	draw_profile_mini_map(stock);
 	draw_the_player(stock);
-	draw_directions(stock);
+	draw_border(stock);
 	draw_icons(stock);
 }

@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:31:20 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/14 13:50:32 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/18 17:43:06 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,7 @@ double	get_horizontal_distance(t_stock *stock, double ray_angle, int ray_index)
 	if (stock->rays[ray_index]->is_ray_facing_up)
 		ystep *= -1;
 	
-	xstep = MINI_MAP_BOX_ZIZE / tan(to_radians(ray_angle));
-	if (stock->rays[ray_index]->is_ray_facing_left && xstep > 0)
-		xstep *= -1;
-	if (stock->rays[ray_index]->is_ray_facing_right && xstep < 0)
-		xstep *= -1;
-
+	xstep = ystep / tan(to_radians(ray_angle));
 	next_hori_touch_x = xintercept_hori;
 	next_hori_touch_y = yintercept_hori;
 	while (next_hori_touch_x >= 0 && next_hori_touch_x <= (WIDTH * MINI_MAP_BOX_ZIZE) && next_hori_touch_y >= 0 && next_hori_touch_y <= (HIGTH * MINI_MAP_BOX_ZIZE))

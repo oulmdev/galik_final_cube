@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:32:00 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/12 22:45:19 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/18 18:19:30 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,11 @@ double	get_vertical_distance(t_stock *stock, double ray_angle, int ray_index)
 	yintercept_verti = stock->player->player_pos_y 
 		+ (xintercept_verti - stock->player->player_pos_x)
 		* tan(to_radians(ray_angle));
+	
 	xstep = MINI_MAP_BOX_ZIZE;
 	if (stock->rays[ray_index]->is_ray_facing_left)
 		xstep *= -1;
-	ystep = MINI_MAP_BOX_ZIZE * tan(to_radians(ray_angle));
-	if (stock->rays[ray_index]->is_ray_facing_up && ystep > 0)
-		ystep *= -1;
-	if (stock->rays[ray_index]->is_ray_facing_down && ystep < 0)
-		ystep *= -1;
+	ystep = xstep * tan(to_radians(ray_angle));
 	next_verti_touch_x = xintercept_verti;
 	next_verti_touch_y = yintercept_verti;
 	while (next_verti_touch_x >= 0 && next_verti_touch_x 

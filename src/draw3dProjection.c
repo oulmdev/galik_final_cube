@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 20:36:59 by moulmoud          #+#    #+#             */
-/*   Updated: 2023/06/16 19:36:29 by moulmoud         ###   ########.fr       */
+/*   Updated: 2023/06/19 22:20:50 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ void	find_texture_and_offset(t_stock *stock, int *texture_index,
 	}
 	else if (stock->rays[i]->was_hit_horizontal)
 	{
-
 		*texture_offset_x = (int)stock->rays[i]->horizontal_wall_hit_x
 			% MINI_MAP_BOX_ZIZE;
 		tmp = *texture_offset_x;
@@ -79,8 +78,7 @@ void	find_texture_and_offset(t_stock *stock, int *texture_index,
 }
 
 /*****************************************************************************
- * 							DRAW 3D PROJECTION
- * this function is used to draw the 3d projection of the walls
+
 *****************************************************************************/
 void	draw_3d_projection(t_stock *stock)
 {
@@ -99,21 +97,16 @@ void	draw_3d_projection(t_stock *stock)
 	while  (i < WIDTH)
 	{
 		find_texture_and_offset(stock, &texture_index, &texture_offset_x, i);
-		
 		if (stock->rays[i]->projection_distance >= HIGTH)
 			j = 0;
 		else
 			j = (HIGTH / 2) - (stock->rays[i]->projection_distance / 2);
 		while (j < (HIGTH / 2) + (stock->rays[i]->projection_distance / 2) && j < HIGTH)
 		{
-			texture_offset_y = (j + (stock->rays[i]->projection_distance / 2) 
-				- (HIGTH / 2)) * (stock->texture[texture_index]->height
-				/ stock->rays[i]->projection_distance);
-			// tmp = texture_offset_y;
-			// texture_offset_y = (tmp * stock->texture[texture_index]->height)
-			// 	/ MINI_MAP_BOX_ZIZE;
+			texture_offset_y = (stock->texture[texture_index]->height * (j + (stock->rays[i]->projection_distance / 2) 
+				- (HIGTH / 2))) / stock->rays[i]->projection_distance;
 			if (texture_offset_y < 0)
-				texture_offset_y *= -1;
+				texture_offset_y *= 0;
 			color = get_xpm_color(stock->texture[texture_index],
 				texture_offset_x, texture_offset_y);
 			my_mlx_pixel_put(stock->img, i, j, color);
@@ -122,3 +115,4 @@ void	draw_3d_projection(t_stock *stock)
 		i++;
 	}
 }
+
